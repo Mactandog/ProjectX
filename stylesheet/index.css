@@ -1,0 +1,543 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Saira+Stencil+One&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    height: 100vh;
+    scroll-behavior: smooth;
+    /* filter: brightness(0.9); */
+    /* -webkit-filter: grayscale(0.2); */
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+header,
+footer
+{
+    padding: 0 40px;
+}
+
+header
+{
+    background-color: black;
+    position: sticky;
+    top:0;
+    height: 10vh;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* ================ HEADER ============= */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    z-index: 1000;
+}
+
+.logo-container img
+{
+    width: 50px;
+}
+.logo-container .span1,
+.logo-container .span2
+{
+    font-family: 'Saira Stencil One', cursive;
+    color: #fff;
+}
+.logo-container .span1
+{
+    font-size: 12px;
+    position: absolute;
+    rotate: -90deg;
+    margin-left: -6px;
+    margin-top: 15px;
+}
+.logo-container .span2 
+{
+    font-size: 2em;
+    margin-left: 14px;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
+header nav a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+header nav a:hover
+{
+    color: rgb(209, 54, 57);
+    background-color: #252423;
+    border-radius: 10px;
+}
+/* ------------------ END OF HEADER -------------- */
+/* ================ FEATURED ==================== */
+.feat-container
+{
+    display: flex;
+    background-color:burlywood;
+    min-height: 90vh;
+    background-image: url("/mockup/images/vct22-ch-riot-site-header.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.poster-container
+{
+    display: flex;
+}
+
+.content-inner
+{
+    text-align: center;
+}
+
+.content-inner img
+{
+    width: 400px;
+}
+
+.content-inner h1
+{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.content-inner h2
+{
+    font-size:medium;
+    color: rgb(211, 211, 211);
+}
+
+.content-inner .btn-watch
+{
+    background-color: rgb(209, 54, 57);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: xx-large;
+    padding: 10px 17px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: inset 0 5px 20px rgba(5, 5, 5, 0.5);;
+}
+
+.content-inner .btn-watch:hover
+{
+    box-shadow: 0 2px 50px rgba(196, 5, 21, 0.5);
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* -------------------- END OF FEATURED ------------------ */
+
+/* ================ LATEST NEWS ==================== */
+.latest-news-container
+{
+    background-color: #e7e6e3;
+    background-image: url("/mockup/images/background-sprite.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+
+.cards-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 40px;
+    justify-content: center;
+    row-gap: 1em;
+    column-gap: 2.1em;
+}
+
+.title-bar
+{   
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+    /* background-color: rgb(209, 54, 57); */
+    background-color: #252423;
+    margin-bottom: 50px;
+    border-top: 5px solid rgb(209, 54, 57)
+}
+
+.cards-container > .card-news
+{
+    width: 25em;
+    position: relative;
+}
+
+.cards-container >.card-news img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.cards-container>.card-news .texts
+{
+    padding-left: 30px;
+}
+.cards-container >.card-news h6
+{
+    margin: 0;
+    transform: rotate(-90deg);
+    margin-left: -30px;
+    margin-top: 55px;
+    position: absolute;
+}
+.cards-container >.card-news span
+{
+    background-color: rgb(209, 54, 57);
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    padding: 0 4px;
+    /* border: 1px solid #252423; */
+    position: absolute;
+    right: 0;
+}
+
+.cards-container > .card-news p 
+{
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+
+/* .cards-container > .card-news:hover 
+{
+    
+} */
+
+
+/* ----------------------- END OF LATEST NEWS ----------------------- */
+
+/* ================ ESPORTS ==================== */
+.esports-container {
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(209, 54, 57));
+}
+
+.cards-container-esports
+{
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.card-esports
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.479);
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.card-esports:hover {
+    border-radius: 1em;
+    background: linear-gradient(50deg, #252423, rgb(209, 54, 57));
+}
+.card-esports .inner-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+    padding: 20px;
+}
+
+.card-esports .inner-image
+{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% -700%, 100% 0, 100% 100%, 0 100%); 
+}
+
+.card-esports .inner-image > img
+{
+    object-fit: cover;
+    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+
+/* ------------------ END OF ESPORTS ----------------------- */
+
+
+
+/* ================ FOOTER ==================== */
+
+footer
+{
+    background-color: #252423;
+    height: 1fr;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 40px;
+    align-items: center;
+}
+
+.footer-container .riot-logo-box {
+    width: 150px;
+}
+
+.footer-container .riot-logo-box img {
+    width: 100%;
+}
+
+.footer-container .nav-footer > a,
+.social-link > a {
+    font-size: small;
+    text-decoration: none;
+    color: #949290;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.footer-container .nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-container .nav-footer > a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.social-link > a {
+    font-size: medium;
+    padding: 0 10px;
+}
+
+
+.social-link > a:hover {
+    color: rgb(209, 54, 57);
+    transition-delay: 0.1s;
+    transition: ease-in 0.1s;
+}
+
+.social-link > a:hover,
+.footer-container .nav-footer > a:hover,
+.scroll-top a .arrow:hover  {
+    transition-delay: 0.1s;
+    transition: ease-in 0.1s;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .scroll-top {
+    color: #000000;
+  }
+
+  .scroll-top:hover {
+    color: #949290;
+
+  }
+
+  .scroll-top a .arrow:hover {
+    border: solid rgb(224, 9, 13);
+    border-width: 0 6px 6px 0;
+    
+  }
+
+  .scroll-top > a:before {
+        content: '';
+        display: block;
+        pointer-events: none;
+  }
+/* .footer-container .nav-footer .social-link > .socials {
+    fill: rgb(240, 240, 240);
+} */
+
+/* ----------------------- END OF FOOTER ----------------------- */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+header nav a
+{
+   visibility: hidden;
+}
+
+/* ==================== FEATURED ================= */
+
+/* ==================== ESPORTS ================= */
+.card-esports
+{
+    height: 250px;
+}
+
+.card-esports .inner-content > h2 {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.card-esports .inner-content > p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.card-esports .inner-content {
+    padding: 10px 4px 10px 12px ;
+    text-align: center;
+}
+/* ---------------  END OF ESPORTS ------------ */
+
+/* ================== LATEST NEWS ============== */
+.cards-container
+{
+    row-gap: 3em;
+}
+
+.title-bar
+{   
+    font-size: 2.5em;
+}
+
+.cards-container > .card-news
+{
+    width: 35em;
+}
+
+.cards-container > .card-news > .texts > p {
+    line-height: 1.5em;
+}
+.cards-container >.card-news img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 270px;
+}
+
+/* ============== FOOTER ============== */
+.footer-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 15px 10px 0 10px;
+    align-items: center;
+}
+
+.riot-logo-box {
+    margin-bottom: 10px;
+}
+
+.footer-container .riot-logo-box {
+    width: 100px;
+}
+
+.footer-container .nav-footer {
+    border-top: 1px dotted #949290;
+}
+
+.footer-container .nav-footer {
+    margin-bottom: 20px;
+}
+
+.footer-container .social-link {
+    margin-bottom: 10px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
