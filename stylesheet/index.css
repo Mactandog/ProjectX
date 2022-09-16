@@ -111,7 +111,6 @@ header nav a:hover
     display: flex;
     background-color:burlywood;
     min-height: 90vh;
-    background-image: url("../mockup/images/vct22-featured.jpg");
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -178,7 +177,6 @@ header nav a:hover
 .latest-news-container
 {
     background-color: #e7e6e3;
-    background-image: url('mockup/images/background-sprite.png');
     background-size:contain;
     background-repeat: no-repeat;
 
