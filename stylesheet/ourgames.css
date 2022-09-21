@@ -1,0 +1,148 @@
+.container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    background-color: #0f1519;
+    scroll-behavior: smooth;
+}
+
+nav a:nth-child(4) {
+    background-color: rgb(209, 54, 57);
+    border-radius: 10px;
+}
+
+.parallax-background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallax-background .background {
+    position: absolute;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-20px) scale(5);
+}
+
+.parallax-background .title {
+    margin: 100px 0;
+}
+
+.parallax-background .title h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: 900;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+/* ===================== MAIN CONTENT ==================== */
+
+main .games-pg-container {
+    background-color:#797979;
+    margin: 10rem 0 -14rem 0;
+    padding-top: 0.5rem;
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+    position: relative;
+    top: -14rem;
+}
+
+main .games-pg-container .pg-container-border {
+    background-color: #0f1519;
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+    padding: 7rem 3rem 0 3rem;
+    position: relative;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    column-gap: 3rem;
+}
+
+.card-games {
+    width: 100%;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.image-holder img{
+    transition: transform .2s ease;
+  }
+
+.card-games:hover {
+    /* border: 2px solid; */
+    /* border-color: rgb(209, 54, 57); */
+    
+}
+
+.image-holder img:hover {
+    border: 2px solid;
+    border-color: #9b6a00;
+    box-shadow: 0 5px 20px rgba(233, 182, 15, 0.349);
+    transform: scale(1.05);
+    transition: 100ms ease-out;
+}
+
+.image-holder {
+    position: relative;
+}
+
+.image-holder img {
+    width: 100%;
+    border-radius: 20px;
+    /* border: 2px solid rgb(209, 54, 57); */
+}
+
+.text-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+.text-holder img, 
+.text-holder h2 {
+    width: 100%;
+    height: 100%;
+}
+
+.text-holder h2 {
+    padding: 0 1.5em;
+    font-size: .8em;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.icons-download {
+    background-color: #0f15197e;
+    font-size: 1em;
+    letter-spacing: 0.4rem;
+    border-radius: 1rem;
+    margin-top: .5rem;
+    padding: 0.2em 0.4em 0.2em 0.8em;
+}
