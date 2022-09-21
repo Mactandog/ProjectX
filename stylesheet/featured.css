@@ -1,17 +1,9 @@
-.container {
-    scroll-behavior: smooth;
-}
-
-nav a:nth-child(2) {
-    background-color: rgb(209, 54, 57);
-    border-radius: 10px;
-}
-
-.container {
+.container-main {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-behavior: smooth;
 }
 
 .parallax-background {
@@ -42,7 +34,7 @@ nav a:nth-child(2) {
     color: #d1363a;
     font-size: 5em;
     font-weight: 900;
-    letter-spacing: 1em;
+    letter-spacing: .5em;
     text-transform: uppercase;
     font-style: italic;
     margin-left: 0.8em;
@@ -84,8 +76,10 @@ main {
     padding-right: 10px;
 }
 .content-box .inner-text h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #fff;
+    margin: 1em 0;
 }
 
 .content-box .inner-text h4 {
@@ -133,7 +127,9 @@ main {
 
 .latest-feat-heading h1 {
     font-size: 4em;
+    font-weight: 700;
     color: #fff;
+    margin: 2rem 0;
 }
 
 .featured-list {
@@ -236,6 +232,10 @@ a .card-features .image-holder:active::before {
 .card-features .text-holder h2,
 .card-features .text-holder h4 {
     font-weight: 600;
+}
+
+.card-features .text-holder h4 {
+    font-size: 1rem;
 }
 
 .card-features .text-holder h5 {

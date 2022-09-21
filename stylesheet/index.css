@@ -1,10 +1,17 @@
 
-nav a:nth-child(1) {
+/* nav a:nth-child(1) {
     background-color: rgb(209, 54, 57);
     border-radius: 10px;
-}
+} */
 
 /* ================ FEATURED ==================== */
+
+.container-main {
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 .feat-container
 {
     display: flex;
@@ -31,15 +38,17 @@ nav a:nth-child(1) {
     width: 400px;
 }
 
-.content-inner h1
+.content-inner > h1.feature-title
 {
+    font-weight: 900;
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 .content-inner h2
 {
-    font-size:medium;
+    font-size: medium;
     color: rgb(211, 211, 211);
 }
 
@@ -56,7 +65,7 @@ nav a:nth-child(1) {
     border: none;
     cursor: pointer;
     margin-top: 50px;
-    box-shadow: inset 0 5px 20px rgba(5, 5, 5, 0.5);
+    /* box-shadow: inset 0 5px 20px rgba(5, 5, 5, 0.5); */
 }
 
 .content-inner .btn-watch:hover
@@ -90,7 +99,7 @@ nav a:nth-child(1) {
 }
 
 .title-bar
-{   
+{
     text-align: center;
     font-weight: 700;
     letter-spacing: 3px;
@@ -116,19 +125,16 @@ nav a:nth-child(1) {
     height: 300px;
 }
 
-.cards-container>.card-news .texts
-{
-    padding-left: 30px;
-}
-.cards-container >.card-news h6
+/* .cards-container > .card-news h6
 {
     margin: 0;
     transform: rotate(-90deg);
     margin-left: -30px;
     margin-top: 55px;
     position: absolute;
-}
-.cards-container >.card-news span
+} */
+
+.cards-container > .card-news span
 {
     background-color: rgb(209, 54, 57);
     color: #fff;
@@ -142,20 +148,20 @@ nav a:nth-child(1) {
     right: 0;
 }
 
-.cards-container > .card-news p 
+.cards-container > .card-news p
 {
     text-align: justify;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4; /* number of lines to show */
-            line-clamp: 4; 
+            line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
-/* .cards-container > .card-news:hover 
+/* .cards-container > .card-news:hover
 {
-    
+
 } */
 
 
@@ -208,7 +214,7 @@ nav a:nth-child(1) {
 {
     width: 100%;
     height: 100%;
-    clip-path: polygon(100% -700%, 100% 0, 100% 100%, 0 100%); 
+    clip-path: polygon(100% -700%, 100% 0, 100% 100%, 0 100%);
 }
 
 .card-esports .inner-image > img
@@ -218,7 +224,7 @@ nav a:nth-child(1) {
     width: 100%;
     height: 100%;
     position: relative;
-    
+
 }
 
 
@@ -234,10 +240,10 @@ nav a:nth-child(1) {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-header nav a
+/* header nav a
 {
    visibility: hidden;
-}
+} */
 
 /* ==================== FEATURED ================= */
 
@@ -270,7 +276,7 @@ header nav a
 }
 
 .title-bar
-{   
+{
     font-size: 2.5em;
 }
 

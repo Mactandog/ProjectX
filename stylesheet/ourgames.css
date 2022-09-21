@@ -1,15 +1,10 @@
-.container {
+.container-main {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
     background-color: #0f1519;
     scroll-behavior: smooth;
-}
-
-nav a:nth-child(4) {
-    background-color: rgb(209, 54, 57);
-    border-radius: 10px;
 }
 
 .parallax-background {

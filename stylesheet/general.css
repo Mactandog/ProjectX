@@ -158,7 +158,8 @@ header nav a:hover
     border-bottom: 1px solid #94929067;
   }
 
-  .navbar-collapse {
+  .navbar-collapse,
+  .offcanvas-body {
     background-color: black;
   }
 
@@ -177,6 +178,7 @@ header nav a:hover
     color: #fff;
     font-weight: 500;
     padding: 4px 8px;
+    margin: 4px;
   }
 
   .nav-link:hover {
@@ -213,6 +215,12 @@ header nav a:hover
     transition: ease-in 0.1s;
   }
 
+.active-li,
+.active-li a {
+    color: rgb(209, 54, 57);
+    background-color: rgb(19, 18, 18);
+  }
+
   .form-control {
     font-size: small;
     color: #fff;
@@ -247,6 +255,7 @@ header nav a:hover
   .btn {
     padding: 0.2rem;
     background-color: rgb(209, 54, 57);
+    color: white;
   }
 
   .btn:hover {

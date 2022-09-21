@@ -3,7 +3,7 @@ nav a:nth-child(3) {
     border-radius: 10px;
 }
 
-.container {
+.container-main {
     height: 100vh;
     scroll-behavior: smooth;
     overflow-x: hidden;
