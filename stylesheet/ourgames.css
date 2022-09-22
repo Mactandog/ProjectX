@@ -59,15 +59,14 @@ main .games-pg-container .pg-container-border {
     position: relative;
 }
 
-.content-box {
+/* .content-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     justify-content: center;
     align-items: center;
-    /* padding: 2rem; */
     column-gap: 3rem;
-}
+} */
 
 .card-games {
     width: 100%;
@@ -141,3 +140,113 @@ main .games-pg-container .pg-container-border {
     margin-top: .5rem;
     padding: 0.2em 0.4em 0.2em 0.8em;
 }
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    main .games-pg-container .pg-container-border {
+        padding: 5rem .2rem 0 .2rem;
+    }
+
+    .container-fluid {
+        padding: 0 1.2rem; 
+    }
+
+    .card-games {
+        margin-bottom: 2rem;
+    }
+
+    .text-holder h2 {
+        padding: 0 .5em;
+        font-size: .6em;
+        font-weight: 300;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+    .text-holder img {
+        width: 80%;
+    }
+
+    .icons-download {
+        font-size: .7em;
+        letter-spacing: 0.4rem;
+        border-radius: .5rem;
+        margin-top: .3rem;
+        padding: 0.2em 0.4em 0.2em 0.8em;
+    }
+
+    .parallax-background .title h1 {
+        font-size: 3em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    main .games-pg-container .pg-container-border {
+        padding: 6rem .2rem 0 .2rem;
+    }
+
+    .container-fluid {
+        padding: 0 1.5rem; 
+    }
+
+    
+    .card-games {
+        margin-bottom: 2rem;
+    }
+
+    .text-holder h2 {
+        padding: 0 .5em;
+        font-size: .6em;
+        font-weight: 300;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+     
+    .text-holder h2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-holder img {
+        width: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    main .games-pg-container .pg-container-border {
+        padding: 8rem 1.5rem 0 1.5rem;
+    }
+
+    .text-holder h2 {
+        padding: 0 .5em;
+        font-size: 1em;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+    .text-holder h2 {
+        padding: 0 .5em;
+        font-size: .8em;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
