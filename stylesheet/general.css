@@ -29,19 +29,18 @@ body
     flex-direction: column;
 }
 
-header,
 footer
 {
     padding: 10px 40px;
 }
 
-header
+/* header
 {
     background-color: black;
     position: sticky;
     top:0;
     height: 10vh;
-}
+} */
 
 main
 {
@@ -56,14 +55,14 @@ footer
     height: 1fr;
 }
 
-header
+/* header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
     z-index: 1000;
-}
+} */
 
 /* ================ HEADER ============= */
 

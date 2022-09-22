@@ -22,104 +22,342 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="stylesheet/general.css" />
+
+    <style>
+      @media (min-width: 992px) {
+        .rounded-lg-3 {
+          border-radius: 0.3rem;
+        }
+      }
+      body {
+        background-image: url("/mockup/images/texture-light@2x.jpg");
+        background-size: cover;
+      }
+
+      .mail,
+      .mail:focus {
+        background-color: dimgray;
+      }
+
+      .plcholder {
+        color: #fff;
+      }
+
+      .form-floating textarea {
+        min-height: 10rem;
+        padding: 0 8px 8px;
+      }
+
+      .form-floating {
+        background-color: none;
+      }
+
+      .custom-form > .btn {
+        background-color: rgb(209, 54, 57);
+      }
+
+      .custom-form > .btn:hover {
+        background-color: black;
+        color: #fff;
+      }
+
+      .list-unstyled > li {
+        margin-bottom: 2rem;
+      }
+
+      .media-link {
+        text-decoration: none;
+        color: rgb(209, 54, 57);
+      }
+
+      .media-link:hover {
+        text-decoration: underline;
+        color: #252423;
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-      <div class="container-fluid">
-        <div class="logo-container">
-          <span class="span1">THE</span>
-          <span class="span2">PORTAL</span>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              <span class="span1">The</span>
-              <span class="span2">Portal</span>
-            </h5>
+    <div class="container-main">
+      <header class="justify-content-between sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <div class="logo-container">
+              <span class="span1">THE</span>
+              <span class="span2">PORTAL</span>
+            </div>
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul
-              class="navbar-nav flex-grow-1 pe-3 align-self-lg-center align-self-md-center align-self-xlg-center justify-content-end"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
             >
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  <span class="span1">The</span>
+                  <span class="span2">Portal</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 align-self-lg-center align-self-md-center align-self-xlg-center justify-content-end"
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="featured.html">Featured</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ourgames.html">Our Games</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Esports
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark p-0 mt-2">
-                  <li>
-                    <a class="dropdown-item py-2" href="valesports.html"
-                      >Valorant</a
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"
+                      >Home</a
                     >
                   </li>
-                  <li>
-                    <hr class="dropdown-divider m-0 bg-light" />
+                  <li class="nav-item">
+                    <a class="nav-link" href="featured.html">Featured</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item py-2" href="lolesports.html"
-                      >League of Legends</a
+                  <li class="nav-item">
+                    <a class="nav-link" href="ourgames.html">Our Games</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Esports
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark p-0 mt-2">
+                      <li>
+                        <a class="dropdown-item py-2" href="valesports.html"
+                          >Valorant</a
+                        >
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider m-0 bg-light" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-2" href="lolesports.html"
+                          >League of Legends</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contactus.html"
+                      >Contact Us</a
                     >
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contactus.html">Contact Us</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">Search</button>
-            </form>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-5 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 mb-3">
+                We'd love to connect with you!
+              </h1>
+              <p class="col-lg-10 fs-4 fw-semibold">
+                Send us an email today and subscribe to our Daily Newsletter!
+              </p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-7">
+              <form class="p-4 p-md-5 border rounded-3 bg-light custom-form">
+                <!-- email -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control mail"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput" class="plcholder"
+                    >Email address</label
+                  >
+                </div>
+
+                <div class="form-outline form-floating mb-3">
+                  <textarea
+                    class="form-control mail"
+                    id="floatingInput"
+                    rows="10"
+                    placeholder="Message"
+                  ></textarea>
+                  <label
+                    class="form-label plcholder txtarea-lbl"
+                    for="floatingInput"
+                    >Message</label
+                  >
+                </div>
+
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me" /> Subscribe to
+                    Newsletter
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-red" type="submit">
+                  Send
+                </button>
+                <hr class="my-4" />
+                <small class="text-muted"
+                  >By checking "Subscribe to Newsletter", you agree to the terms
+                  of receiving emails for latest news and promotions of Riot
+                  Games. You may unsubscribe at any time by clicking the
+                  unsubscribe link in the footer of our emails. For information
+                  about our privacy practices, please visit our website.</small
+                >
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+
+        <div class="container my-5">
+          <div
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+          >
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+              <h1 class="display-4 fw-bold lh-1">Media Contacts</h1>
+              <ul
+                class="list-unstyled row justify-content-center align-items-center g-2"
+              >
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">Twitter</h5>
+                    <a href="#" class="media-link">Riot Games</a><br />
+                    <a href="#" class="media-link">League of Legends</a><br />
+                    <a href="#" class="media-link">Teamfight Tactics</a><br />
+                    <a href="#" class="media-link">Legends of Runeterra</a
+                    ><br />
+                    <a href="#" class="media-link"
+                      >League of Legends: Wild Rift</a
+                    ><br />
+                    <a href="#" class="media-link">VALORANT</a>
+                  </div>
+                </li>
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">Facebook</h5>
+                    <a href="#" class="media-link">Riot Games</a><br />
+                    <a href="#" class="media-link">League of Legends</a><br />
+                    <a href="#" class="media-link">Teamfight Tactics</a><br />
+                    <a href="#" class="media-link">Legends of Runeterra</a
+                    ><br />
+                    <a href="#" class="media-link"
+                      >League of Legends: Wild Rift</a
+                    ><br />
+                    <a href="#" class="media-link">VALORANT</a>
+                  </div>
+                </li>
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">Instagram</h5>
+                    <a href="#" class="media-link">Riot Games</a><br />
+                    <a href="#" class="media-link">League of Legends</a><br />
+                    <a href="#" class="media-link">Teamfight Tactics</a><br />
+                    <a href="#" class="media-link">Legends of Runeterra</a
+                    ><br />
+                    <a href="#" class="media-link"
+                      >League of Legends: Wild Rift</a
+                    ><br />
+                    <a href="#" class="media-link">VALORANT</a>
+                  </div>
+                </li>
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">YouTube</h5>
+                    <a href="#" class="media-link">Riot Games</a><br />
+                    <a href="#" class="media-link">League of Legends</a><br />
+                    <a href="#" class="media-link">Legends of Runeterra</a
+                    ><br />
+                    <a href="#" class="media-link"
+                      >League of Legends: Wild Rift</a
+                    ><br />
+                    <a href="#" class="media-link">VALORANT</a>
+                  </div>
+                </li>
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">Media Inquiries</h5>
+                    <a href="#" class="media-link">media@riotgames.com</a>
+                  </div>
+                </li>
+                <li class="d-flex col">
+                  <div class="flex-grow-1 ms-3">
+                    <h5 class="mt-0">Linkedin</h5>
+                    <a href="#" class="media-link">Riot Games</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img
+                class="rounded-lg-3"
+                src="mediahub/photos/annie.jpg"
+                alt=""
+                width="720"
+                style="-webkit-transform: scaleX(-1); transform: scaleX(-1)"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="riot-logo-box">
+            <img
+              src="mockup/images/002_RG_2021_FULL_LOCKUP_OFFWHITE.png"
+              alt="Riot Logo"
+            />
+          </div>
+          <div class="nav-footer">
+            <a href="">Press</a>
+            <a href="">Legal</a>
+            <a href="">Accessibility</a>
+            <a href="">Terms of Service</a>
+          </div>
+          <div class="social-link">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="scroll-top">
+            <a href="#top"><i class="arrow up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script
