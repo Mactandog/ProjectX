@@ -273,14 +273,14 @@ header nav a:hover
     margin: 10px 40px;
 }
 
-.footer-container .riot-logo-box {
+.riot-logo-box {
     max-width: 150px;
     margin-bottom: 10px;
-    align-self: center;
+    align-self: flex-start;
     color: #fff;
 }
 
-.footer-container .riot-logo-box img {
+.riot-logo-box img {
     width: 100%;
 }
 
@@ -293,7 +293,7 @@ header nav a:hover
   min-width: 135px;
 }
 
-.footer-container .nav-footer > a,
+.nav-footer > a,
 .social-link > a {
     font-size: small;
     text-decoration: none;
@@ -302,14 +302,14 @@ header nav a:hover
     text-transform: uppercase;    
 }
 
-.footer-container .nav-footer {
+.nav-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
 }
 
-.footer-container .nav-footer > a:hover {
+.nav-footer > a:hover {
     text-decoration: underline;
     color: #fff;
 }
@@ -328,7 +328,7 @@ header nav a:hover
 }
 
 .social-link > a:hover,
-.footer-container .nav-footer > a:hover,
+.nav-footer > a:hover,
 .scroll-top > a:hover  {
     transition-delay: 0.1s;
     transition: ease-in 0.1s;
@@ -338,7 +338,7 @@ header nav a:hover
     align-self: flex-end;
   }
 
-  .scroll-top a {
+  .scroll-top > a {
     text-decoration: none;
     color: #949290;
   }
@@ -389,6 +389,12 @@ header nav a:hover
     text-align: center;
   }
 
+}
+
+@media screen and (max-width: 635px) {
+  .riot-logo-box {
+    /* width: ; */
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
