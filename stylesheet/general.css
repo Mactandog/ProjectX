@@ -29,18 +29,19 @@ body
     flex-direction: column;
 }
 
+header,
 footer
 {
     padding: 10px 40px;
 }
 
-/* header
+header
 {
     background-color: black;
     position: sticky;
     top:0;
     height: 10vh;
-} */
+}
 
 main
 {
@@ -55,14 +56,14 @@ footer
     height: 1fr;
 }
 
-/* header
+header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
     z-index: 1000;
-} */
+}
 
 /* ================ HEADER ============= */
 
@@ -166,6 +167,7 @@ header nav a:hover
     justify-content: space-between !important;
     padding: 0 3rem;
   }
+  
   .navbar-brand {
     font-family: "Saira Stencil One", cursive;
     color: #fff;
@@ -268,20 +270,27 @@ header nav a:hover
 /* ================ FOOTER ==================== */
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 10px 40px;
-    align-items: center;
 }
 
 .footer-container .riot-logo-box {
-    width: 150px;
+    max-width: 150px;
+    margin-bottom: 10px;
+    align-self: center;
+    color: #fff;
 }
 
 .footer-container .riot-logo-box img {
     width: 100%;
+}
+
+.riot {
+  min-width: 80px;
+  max-width: 80px
+}
+
+.theportal {
+  min-width: 135px;
 }
 
 .footer-container .nav-footer > a,
@@ -289,14 +298,15 @@ header nav a:hover
     font-size: small;
     text-decoration: none;
     color: #949290;
-    padding: 0 20px;
-    text-transform: uppercase;
+    padding: 0 10px;
+    text-transform: uppercase;    
 }
 
 .footer-container .nav-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .footer-container .nav-footer > a:hover {
@@ -306,11 +316,12 @@ header nav a:hover
 
 .social-link > a {
     font-size: medium;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 
-.social-link > a:hover {
+.social-link > a:hover,
+.scroll-top > a:hover {
     color: rgb(209, 54, 57);
     transition-delay: 0.1s;
     transition: ease-in 0.1s;
@@ -318,48 +329,82 @@ header nav a:hover
 
 .social-link > a:hover,
 .footer-container .nav-footer > a:hover,
-.scroll-top a .arrow:hover  {
+.scroll-top > a:hover  {
     transition-delay: 0.1s;
     transition: ease-in 0.1s;
 }
 
-.arrow {
-    border: solid black;
-    border-width: 0 6px 6px 0;
-    display: inline-block;
-    padding: 6px;
-    position: relative;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-  }
-
   .scroll-top {
-    color: #000000;
+    align-self: flex-end;
   }
 
-  .scroll-top:hover {
+  .scroll-top a {
+    text-decoration: none;
     color: #949290;
+  }
+
+
+  .scroll-top > a:hover {
+    color: solid rgb(224, 9, 13);
 
   }
 
-  .scroll-top a .arrow:hover {
-    border: solid rgb(224, 9, 13);
-    border-width: 0 6px 6px 0;
-    
-  }
-
-  .scroll-top > a:before {
-        content: '';
-        display: block;
-        pointer-events: none;
+  .spacing {
+    align-self: flex-end;
+    /* padding-left: 20rem; */
   }
 /* .footer-container .nav-footer .social-link > .socials {
     fill: rgb(240, 240, 240);
 } */
 
 /* ----------------------- END OF FOOTER ----------------------- */
+
+/* ====== HEADER SEARCH FORM ===== */
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .head-form {
+    padding: .7rem 0;
+  }
+}
+
+/* ======= FOOTER ADJUSTMENT ======== */
+@media screen and (max-width: 991px) {
+  .nav-footer {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-top: 1px dotted #949290;
+    border-bottom: 1px dotted #949290;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .social-link {
+    padding-bottom: .6rem;
+    border-bottom: 1px dotted #949290;
+    text-align: center;
+  }
+
+  .scroll-top {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .spacing {
+
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

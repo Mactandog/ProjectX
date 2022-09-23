@@ -296,23 +296,23 @@
 }
 
 /* ============== FOOTER ============== */
-.footer-container {
+/* .footer-container {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 15px 10px 0 10px;
     align-items: center;
-}
+} */
 
 .riot-logo-box {
     margin-bottom: 10px;
 }
 
-.footer-container .riot-logo-box {
+/* .footer-container .riot-logo-box {
     width: 100px;
-}
+} */
 
-.footer-container .nav-footer {
+/* .footer-container .nav-footer {
     border-top: 1px dotted #949290;
 }
 
@@ -323,8 +323,11 @@
 .footer-container .social-link {
     margin-bottom: 10px;
 }
+} */
 }
 
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {...} */
 
@@ -338,24 +341,3 @@
 /* @media only screen and (min-width: 1200px) {...} */
 
 
-
-
-
-
-/* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {....} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */

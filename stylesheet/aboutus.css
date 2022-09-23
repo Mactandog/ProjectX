@@ -1,0 +1,72 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.container-main {
+background-color: #e7e6e3;
+}
+
+.lead {
+text-align: justify;
+font-weight: 400;
+}
+
+.carousel {
+max-height: 70vh;
+}
+.carousel-item {
+max-height: 70vh;
+}
+
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+    font-size: 3.5rem;
+}
+
+.carousel-caption {
+    padding: 1rem;
+}
+.carousel-caption > h1 {
+    font-size: 25;
+    text-align: center;
+}
+
+.carousel-caption > p {
+    font-size: 18px;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-caption > h1 {
+        font-size: 20;
+        text-align: center;
+    }
+    
+    .carousel-caption > p {
+        font-size: 14px;
+    }
+    
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-caption > h1,
+    .carousel-caption > p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .carousel-caption > h1,
+    .carousel-caption > p {
+        text-align: center;
+    }
+
+
+}

@@ -78,11 +78,6 @@ main .games-pg-container .pg-container-border {
     transition: transform .2s ease;
   }
 
-.card-games:hover {
-    /* border: 2px solid; */
-    /* border-color: rgb(209, 54, 57); */
-    
-}
 
 .image-holder img:hover {
     border: 2px solid;

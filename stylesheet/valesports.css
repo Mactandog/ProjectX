@@ -2,7 +2,9 @@
     background-color: rgb(209, 54, 57);
     border-radius: 10px;
 } */
-
+main {
+    margin-top: -1.5rem;
+}
 .container-main {
     height: 100vh;
     scroll-behavior: smooth;
@@ -22,6 +24,7 @@
     width: 100%;
     height: 60vh;
     border-bottom: 2px solid rgb(209, 54, 57);
+    margin-top: 0;
 }
 
 .banner-container img {
@@ -30,14 +33,14 @@
     object-fit: cover;
 }
 
-.content {
+/* .content {
     display: grid;
     grid-template-columns: 1fr 35vw;
-    /* margin: 0 40px; */
     justify-content: flex-start;
     align-items: flex-start;
 
-}
+} */
+
 
 ._content {
     display: flex;
@@ -69,6 +72,8 @@
 .cards-link {
     text-decoration: none;
 }
+
+
 
 
 .custom-card .image-holder img {
@@ -160,17 +165,24 @@ a.btn-show-more:hover::before,
 }
 
 .btn-show-more {
-    background-color: #2e2d2d91;
+    /* background-color: #232629; */
     color: #fff;
     text-decoration: none;
     font-size: 1em;
     border-radius: 3em;
     margin-top: 2em;
     border: none;
-    padding: 0.3em 0.3em 0.3em 0.8em;
+    /* padding: 0.3em 0.3em 0.3em 0.8em; */
     position: relative;
-    width: 8.3rem;
+    width: 1rem;
     align-self: center;
+    text-align: center;
+}
+
+.btn-bg {
+    background-color: #232629;
+    border-radius: 3em;
+    font-size: 1.2rem;
 }
 
 .btn-show-more .btn-style span {
@@ -186,10 +198,10 @@ a.btn-show-more:hover::before,
 /* =============== SIDEBAR ====================== */
 
 .sidebar {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: start;
-    align-content: center;
+    align-content: center; */
     /* min-width: 45vw; */
     border-left: 1px solid #8fa3b065;
     background-color: #0a0e13;
@@ -199,16 +211,17 @@ a.btn-show-more:hover::before,
 .vod h4 {
     font-size: 4rem;
     color: #fff;
-    margin: 0;
+    margin-bottom: 2rem;
+
 }
 
 .vod {
     border-bottom: 1px solid #8fa3b065;
-    padding: 0 2rem 0 2rem;
+    /* padding: 0 2rem 0 2rem; */
 }
 
 .twitter-container {
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 2rem 0;
 }
 
 .vod-container {
@@ -236,8 +249,10 @@ a.btn-show-more:hover::before,
 
 .team-logo {
     display: flex;
-    max-width: 200px;
-    min-width: 100px
+    max-width: 350px;
+    min-width: 100px;
+    margin-right: .5rem;
+    
 }
 
 .team-logo span {
@@ -266,3 +281,86 @@ a.btn-show-more:hover::before,
     text-decoration: none;
 }
 /* ==================== END OF SIDEBAR ================== */
+
+
+
+
+
+/* ====== BOOTSTRAP ======= */
+.featured-content {
+    background-color: #0a0e13;
+    
+}
+
+.feat-title {
+    color: #fff;
+}
+
+.lead {
+    color: #bec7cc;
+}
+
+.continue {
+    color: rgb(209, 54, 57);
+    text-decoration: none;
+}
+
+.continue:hover {
+    color: rgb(209, 54, 57);
+    text-decoration: underline;
+}
+
+
+
+
+.content {
+    background-color: #0f1519;
+    border-top: 1px solid #bec7cc;
+   
+}
+
+.heading {
+    border-bottom: 1px solid #bec7cc63;
+}
+
+
+.card {
+    background-color: #00000041;
+    border: none;
+    border-radius: 0;
+}
+
+
+.card-title {
+    color: #e7e6e3;
+}
+
+.card-text {
+    color: #8fa3b0;
+    text-align: justify;
+}
+
+
+.col > a {
+    text-decoration: none;
+}
+
+a:hover > .card > .card-body > .card-title  {
+    text-decoration: underline;
+    text-decoration-color: rgb(209, 54, 57);
+}
+
+.card {
+    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+}
+.card > img {
+  display: block;
+  transition: transform .4s;   /* smoother zoom */
+}
+a:hover > .card > img {
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+}
+
+
+
