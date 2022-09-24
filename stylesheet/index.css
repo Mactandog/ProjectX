@@ -108,7 +108,7 @@
     font-size: 3em;
     /* background-color: rgb(209, 54, 57); */
     background-color: #252423;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     border-top: 5px solid rgb(209, 54, 57);
 }
 
@@ -229,6 +229,138 @@
 
 
 /* ------------------ END OF ESPORTS ----------------------- */
+
+
+/* ==================   ACCORDION ================ */
+.card {
+    background-color: #1d1b1b;
+    border: none;
+    border-radius: 0;
+}
+
+.card-title {
+    color: #e7e6e3;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-text {
+    color: #8fa3b0;
+    text-align: justify;
+}
+
+.col > a {
+    text-decoration: none;
+}
+
+a:hover > .card > .card-body > .card-title  {
+    text-decoration: underline;
+    text-decoration-color: #00c8c8;
+}
+
+.card {
+    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+}
+
+.card > img {
+  /* display: block; */
+  transition: transform .4s;   /* smoother zoom */
+}
+a:hover > .card > img {
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+}
+
+
+.article {
+    background-color: #1b1a1a;
+}
+
+
+.img-holder {
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% -700%, 100% 0, 100% 100%, 0 100%);
+}
+
+.unordered-list {
+    list-style: none;
+    padding-left: 12px;
+}
+
+.unordered-list > li,
+.big-article {
+    border-radius: 10px;
+}
+
+.btn-seemore {
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+.accordion-button {
+    height: 10rem;
+}
+.accordion-button:hover {
+    color: #8fa3b0
+}
+
+.blue-bg {  
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(1,6,42,1) 100%);
+}
+
+.bg-purple {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(45,15,60,1) 100%);
+}
+
+.bg-red {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(60,15,15,1) 100%);
+}
+
+.bg-yellow {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(77,76,19,1) 100%);
+}
+
+.acc-style-news,
+.acc-style-riot,
+.acc-style-game,
+.acc-style-job {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.acc-style-news {
+
+    background: rgb(0,0,0);
+    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%);
+}
+
+.acc-style-riot {
+    background: rgb(0,0,0);
+    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%);
+}
+
+.acc-style-game {
+    background: rgb(0,0,0);
+    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%);
+}
+
+.acc-style-job {
+    background: rgb(0,0,0);
+    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%);
+}
 
 
 

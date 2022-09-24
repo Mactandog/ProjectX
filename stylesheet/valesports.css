@@ -220,9 +220,6 @@ a.btn-show-more:hover::before,
     /* padding: 0 2rem 0 2rem; */
 }
 
-.twitter-container {
-    padding: 2rem 0;
-}
 
 .vod-container {
     display: flex;
@@ -231,7 +228,6 @@ a.btn-show-more:hover::before,
     list-style: none;
     padding: 0;
     row-gap: 1rem;
-
 }
 
 .vod-container li a {
@@ -252,7 +248,6 @@ a.btn-show-more:hover::before,
     max-width: 350px;
     min-width: 100px;
     margin-right: .5rem;
-    
 }
 
 .team-logo span {
@@ -289,7 +284,6 @@ a.btn-show-more:hover::before,
 /* ====== BOOTSTRAP ======= */
 .featured-content {
     background-color: #0a0e13;
-    
 }
 
 .feat-title {
@@ -310,26 +304,20 @@ a.btn-show-more:hover::before,
     text-decoration: underline;
 }
 
-
-
-
 .content {
     background-color: #0f1519;
     border-top: 1px solid #bec7cc;
-   
 }
 
 .heading {
     border-bottom: 1px solid #bec7cc63;
 }
 
-
 .card {
     background-color: #00000041;
     border: none;
     border-radius: 0;
 }
-
 
 .card-title {
     color: #e7e6e3;
@@ -339,7 +327,6 @@ a.btn-show-more:hover::before,
     color: #8fa3b0;
     text-align: justify;
 }
-
 
 .col > a {
     text-decoration: none;

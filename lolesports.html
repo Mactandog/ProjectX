@@ -21,11 +21,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-
     <script
       src="https://kit.fontawesome.com/149b35f412.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <link href="carousel/carousel.css" rel="stylesheet" />
     <link rel="stylesheet" href="stylesheet/general.css" />
     <link rel="stylesheet" href="stylesheet/lolesports.css" />
   </head>
@@ -95,7 +101,7 @@
                     Esports
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark p-0 mt-2">
-                    <li>
+                    <li >
                       <a class="dropdown-item py-2" href="valesports.html"
                         >Valorant</a
                       >
@@ -132,102 +138,364 @@
       </nav>
 
       <main>
-        <div class="esports-container">
-          <div class="banner-container">
-            <img src="mediahub/banners/LoLEsports_option1.png" alt="" />
+        .
+        <div class="banner-container">
+          <img src="mediahub/banners/LoLEsports_option1.png" alt="LOL Esports banner" />
+        </div>
+
+        <div class="row p-4 p-md-5 featured-content">
+          <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic feat-title">
+              Title of a longer featured blog post
+            </h1>
+            <p class="lead my-3">
+              Multiple lines of text that form the lede, informing new readers
+              quickly and efficiently about what’s most interesting in this
+              post’s contents.
+            </p>
+            <p class="lead mb-md-4">
+              <a href="#" class="continue">Continue reading...</a>
+            </p>
           </div>
+          <picture class="col-md-6">
+            <img
+              src="mediahub/banners/LoLEsports_option1.png"
+              alt="Featured post"
+              class="img-fluid"
+            />
+          </picture>
+        </div>
+        <!-- ====== Image Slider ======  -->
+        <div id="myCarousel" class="carousel slide gy-0" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="bd-placeholder-img img-fluid"
+                width="100%"
+                height="100%"
+                src="https://www.riotgames.com/darkroom/1600/51e2f2310530d0780adc034ec2aa4c68:0747f887d3442594b09d34679e4dd330/1199524.jpeg"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                
+              >
+                <rect width="100%" height="100%" fill="#777" />
+              </img>
 
-          <div class="content">
-            <div class="_content">
-              <div class="heading">
-                <h1>Latest News</h1>
+              <div class="container">
+                <div class="carousel-caption text-start bg-opacity-50 bg-dark p-lg-5 p-sm-2">
+                  <h1>EXECUTE WITH EXCELLENCE</h1>
+                  <p>
+                    We believe operational excellence will unlock us to deliver better experiences for the long run.
+                    • We set ambitious goals, measure ourselves against results, and continually iterate towards improvement.
+                    • We collaborate across teams to deliver holistic experiences to players and Rioters. 
+                    • We focus where it matters, prioritize efficiency, and spend player resources as our own.
+                  </p>
+                 
+                </div>
               </div>
-              <div class="search"></div>
-              <div class="news-container">
-                <a href="#" class="card-link">
-                  <div class="card">
-                    <div class="image-holder">
-                      <img
-                        src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-holder">
-                      <h5>ARTICLE <span>&#8739;</span> September 3, 2022</h5>
-                      <h2>
-                        APAC Rising Music Video ft. Dharni | VALORANT Champions
-                        2022
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="bd-placeholder-img img-fluid"
+                width="100%"
+                height="100%"
+                src="https://www.riotgames.com/darkroom/1600/e555be754d889364f3c9bc9a35f46c7f:f007b23cdcde7b924e93c097dd46edc2/riot-games-option-5-3.jpg"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <rect width="100%" height="100%" fill="#777" />
+              </img>
 
-                <a href="#" class="card-link">
-                  <div class="card">
-                    <div class="image-holder">
-                      <img
-                        src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-holder">
-                      <h5>ARTICLE <span>&#8739;</span> September 3, 2022</h5>
-                      <h2>
-                        APAC Rising Music Video ft. Dharni | VALORANT Champions
-                        2022
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+              <div class="container">
+                <div class="carousel-caption text-start bg-opacity-50 bg-dark p-lg-5 p-sm-2">
+                  <h1>DARE TO DREAM</h1>
+                  <p>
+                    We believe the courage to chase bold ideas will make impossible dreams come true for players. 
+                    • We make bold, focused bets aimed at advancing the gaming landscape.
+                    • We seek unique perspectives, create room for experimentation, and anticipate failure as part of the journey. 
+                    • We work from best practices, value expertise, and innovate when there’s a better way.
+                  </p>
+              
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="bd-placeholder-img img-fluid"
+                width="100%"
+                height="100%"
+               src="https://www.riotgames.com/darkroom/800/f900234d8284fef4be52db4c07f65a93:eb54d4139ae50ee18b9b5e3099a33b9c/yw-2500a.jpg"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <rect width="100%" height="100%" fill="#777" />
+              </img>
 
-                <a href="#" class="card-link">
-                  <div class="card">
-                    <div class="image-holder">
-                      <img
-                        src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-holder">
-                      <h5>ARTICLE <span>&#8739;</span> September 3, 2022</h5>
-                      <h2>
-                        APAC Rising Music Video ft. Dharni | VALORANT Champions
-                        2022
-                      </h2>
-                    </div>
-                  </div>
-                </a>
+              <div class="container">
+                <div class="carousel-caption text-start bg-opacity-50 bg-dark p-lg-5 p-sm-2">
+                  <h1>THRIVE TOGETHER</h1>
+                  <p>
+                    We believe we’re stronger when we respect each other, invest in each other, and succeed as one team.
+                    • We approach every interaction with empathy, sincerity, and respect.
+                    • We cultivate inclusive teams to amplify each Rioter’s strengths.
+                    • We hold ourselves to the highest standard of professionalism and together we embrace the joy of making games.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-                <a href="#" class="card-link">
+        <div class="row g-5 px-4 px-md-5 content">
+          <div class="col-md-12 col-lg-8">
+            <div class="heading mb-5">
+              <h1>Latest News</h1>
+            </div>
+
+            <div
+              class="row row-cols-1 row-cols-md-2 g-4 g-sm-5"
+              data-masonry='{"percentPosition": true }'
+            >
+              <div class="col">
+                <a href="#">
                   <div class="card">
-                    <div class="image-holder">
-                      <img
-                        src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="text-holder">
-                      <h5>ARTICLE <span>&#8739;</span> September 3, 2022</h5>
-                      <h2>
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted">
+                          <h5>
+                            ARTICLE <span>&#8739;</span> September 24, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
                         APAC Rising Music Video ft. Dharni | VALORANT Champions
                         2022
-                      </h2>
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Deserunt illum voluptate
+                        distinctio.
+                      </p>
                     </div>
                   </div>
                 </a>
               </div>
-              <!-- <div class="show-more-container"> -->
+              <div class="col">
+                <a href="#">
+                  <div class="card">
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted"
+                          ><h5>
+                            ARTICLE <span>&#8739;</span> September 18, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
+                        APAC Rising Music Video ft. Dharni | VALORANT Champions
+                        2022
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <div class="card">
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted"
+                          ><h5>
+                            ARTICLE <span>&#8739;</span> September 15, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
+                        APAC Rising Music Video ft. Dharni | VALORANT Champions
+                        2022
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <div class="card">
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted"
+                          ><h5>
+                            ARTICLE <span>&#8739;</span> September 14, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
+                        APAC Rising Music Video ft. Dharni | VALORANT Champions
+                        2022
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Dolor soluta
+                        necessitatibus atque sit fugiat sed quia!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="#">
+                  <div class="card">
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted"
+                          ><h5>
+                            ARTICLE <span>&#8739;</span> September 13, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
+                        APAC Rising Music Video ft. Dharni | VALORANT Champions
+                        2022
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#">
+                  <div class="card">
+                    <img
+                      src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                      alt=""
+                    />
+                    <div class="card-body">
+                      <p class="card-text m-0">
+                        <small class="text-muted"
+                          ><h5>
+                            ARTICLE <span>&#8739;</span> September 12, 2022
+                          </h5></small
+                        >
+                      </p>
+                      <h5 class="card-title">
+                        APAC Rising Music Video ft. Dharni | VALORANT Champions
+                        2022
+                      </h5>
+                      <p class="card-text">
+                        This is a longer card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- end of column1  -->
+            </div>
+            <div class="col-3 m-5 btn-bg">
               <a href="#" class="btn-show-more">
                 <div class="btn-style">
                   Load More
                   <span><i class="fa-solid fa-circle-chevron-down"></i></span>
                 </div>
               </a>
-              <!-- </div> -->
             </div>
+            <!--  -->
+          </div>
 
-            <div class="sidebar">
-              <div class="vod">
+          <!--  -->
+          <!-- <div class="col-md-4 gy-0 sidebar">
+            <div class="vod mt-3"> -->
+              
+          <div class="col-md-12 col-lg-4 gy-0 sidebar">
+            <div class="row row-cols-lg-12">
+              <div class="col-md-7 col-lg-12 vod mt-3 mb-lg-2">
                 <h4>RECENT MATCH VODS</h4>
                 <ol class="vod-container">
                   <li>
@@ -389,26 +657,27 @@
                   </a>
                 </div>
               </div>
-
               <!-- ======== TWITTER POST PLUGIN =========== -->
-              <div class="twitter-container">
+              <div class="col-md-5 col-lg-12 twitter-container p-lg-2 py-md-4 p-sm-4">
                 <a
-                  class="twitter-timeline tweet"
-                  data-height="768"
-                  data-dnt="true"
-                  href="https://twitter.com/lolesports?ref_src=twsrc%5Etfw"
-                  >Tweets by lolesports
-                </a>
+                class="twitter-timeline tweet"
+                data-height="768"
+                data-dnt="true"
+                href="https://twitter.com/lolesports?ref_src=twsrc%5Etfw"
+                >Tweets by lolesports
+              </a>
               </div>
             </div>
           </div>
         </div>
+
+        <!--  -->
       </main>
       <footer>
         <div
           class="footer-container row row-cols-1 row-cols-xl-4 row-cols-lg-2 align-items-center justify-content-around"
         >
-          <div class="col-3 col-sm-3 col-md-3 col-xl-2 col-lg-4">
+          <div class="col-3 col-sm-6 col-md-3 col-xl-2 col-lg-4">
             <div class="riot-logo-box">
               <img
                 src="mediahub/ThePortal.png"

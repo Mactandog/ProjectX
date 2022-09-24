@@ -72,17 +72,22 @@ main .games-pg-container .pg-container-border {
     width: 100%;
     position: relative;
     margin-bottom: 8rem;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.image-holder img{
+.image-holder > img {
+    display: block;
     transition: transform .2s ease;
   }
 
-
-.image-holder img:hover {
-    border: 2px solid;
+.card-games:hover {
     border-color: #9b6a00;
-    box-shadow: 0 5px 20px rgba(233, 182, 15, 0.349);
+    box-shadow: 0 5px 20px rgba(233, 182, 15, 0.521);
+    transform-origin: 50% 50%;
+}
+
+.card-games:hover > a > .image-holder > img {
     transform: scale(1.05);
     transition: 100ms ease-out;
 }
@@ -93,7 +98,6 @@ main .games-pg-container .pg-container-border {
 
 .image-holder img {
     width: 100%;
-    border-radius: 20px;
     /* border: 2px solid rgb(209, 54, 57); */
 }
 
@@ -113,7 +117,7 @@ main .games-pg-container .pg-container-border {
     pointer-events: none;
 }
 
-.text-holder img, 
+.text-holder img,
 .text-holder h2 {
     width: 100%;
     height: 100%;
@@ -145,13 +149,13 @@ main .games-pg-container .pg-container-border {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   
+
     main .games-pg-container .pg-container-border {
         padding: 5rem .2rem 0 .2rem;
     }
 
     .container-fluid {
-        padding: 0 1.2rem; 
+        padding: 0 1.2rem;
     }
 
     .card-games {
@@ -191,10 +195,10 @@ main .games-pg-container .pg-container-border {
     }
 
     .container-fluid {
-        padding: 0 1.5rem; 
+        padding: 0 1.5rem;
     }
 
-    
+
     .card-games {
         margin-bottom: 2rem;
     }
@@ -207,7 +211,7 @@ main .games-pg-container .pg-container-border {
         text-transform: uppercase;
     }
 
-     
+
     .text-holder h2 {
         width: 100%;
         height: 100%;
