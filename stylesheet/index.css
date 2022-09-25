@@ -276,7 +276,7 @@ a:hover > .card > img {
   transform-origin: 50% 50%;
 }
 
-.card-wrapper {
+.card > a {
     text-decoration: none;
 }
 
@@ -306,7 +306,7 @@ a:hover > .card > img {
     border-radius: 10px;
 }
 
-.btn-seemore {
+.row > .btn-seemore {
     background-color: #202020;
     color: #fff;
     text-align: center;
@@ -320,7 +320,7 @@ a:hover > .card > img {
     border: 1px solid #e7e6e3;
 }
 
-.btn-seemore:hover {
+.row > .btn-seemore:hover {
     background-color: #2e2d2d;
     color: #fff;
 }
@@ -337,7 +337,7 @@ a:hover > .card > img {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(1,6,42,1) 100%);
 }
 
-.bg-purple {
+.purple-bg {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(45,15,60,1) 100%);
 }
@@ -352,7 +352,7 @@ a:hover > .card > img {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(77,76,19,1) 100%);
 }
 
-.bg-orange {
+.orange-bg {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(84,49,1,1) 75%, rgba(120,78,1,1) 100%);
 }
@@ -386,6 +386,7 @@ a:hover > .card > img {
 .acc-style-job {
     color: orange;
 }
+
 .acc-title {
     margin-left: 5rem;
     background-color: #1b1a1a;
@@ -393,46 +394,46 @@ a:hover > .card > img {
 }
 
 .acc-style-news {
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,43,2,1) 70%, rgba(77,76,19,1) 100%); */
-    background-image: url('/mediahub/home/red.jpg');
+    background-image: url('mediahub/home/red.jpg');
     background-size:cover;
 }
 
 .acc-style-riot {
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,2,2,1) 70%, rgba(60,15,15,1) 100%); */
-    background-image: url('/mediahub/home/puprle.jpg');
+    background-image: url('mediahub/home/puprle.jpg');
     background-size:cover;
 }
 
 .acc-style-game {
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(38,2,43,1) 70%, rgba(45,15,60,1) 100%); */
-    background-image: url('/mediahub/home/mint.jpg');
+    background-image: url('mediahub/home/mint.jpg');
     background-size:cover;
 }
 
 .acc-style-job {
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%); */
     /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 45%, rgba(0,8,85,1) 100%); */
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 70%, rgba(1,6,42,1) 100%);
-    background-image: url('/mediahub/home/orange.jpg');
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 70%, rgba(1,6,42,1) 100%); */
+    background-image: url('mediahub/home/orange.jpg');
     background-size:cover;
 }
 
 /* ======================= LIST GROUP JOB HIRING ==================== */
-.list-group-item {
+.list-group > .list-group-item {
     background-color: #000000c0;
     color: #e7e6e3;
     font-size: 1.5rem;
 }
 
-.list-group-item:hover {
+.list-group > .list-group-item:hover {
     color: rgb(209, 54, 57);
 }
 
