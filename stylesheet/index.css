@@ -276,6 +276,14 @@ a:hover > .card > img {
   transform-origin: 50% 50%;
 }
 
+.card-wrapper {
+    text-decoration: none;
+}
+
+.card-body:hover > .card-title {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
 
 .article {
     background-color: #1b1a1a;
@@ -294,7 +302,7 @@ a:hover > .card > img {
 }
 
 .unordered-list > li,
-.big-article {
+.col > a >.big-article {
     border-radius: 10px;
 }
 
@@ -304,10 +312,21 @@ a:hover > .card > img {
     text-align: center;
     display: block;
     text-transform: uppercase;
+    padding: 10px;
+    width: 150px;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #e7e6e3;
+}
+
+.btn-seemore:hover {
+    background-color: #2e2d2d;
+    color: #fff;
 }
 
 .accordion-button {
-    height: 10rem;
+    /* height: 10rem; */
 }
 .accordion-button:hover {
     color: #8fa3b0
@@ -333,36 +352,89 @@ a:hover > .card > img {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(77,76,19,1) 100%);
 }
 
+.bg-orange {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(84,49,1,1) 75%, rgba(120,78,1,1) 100%);
+}
+
+.bg-mint {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,84,54,1) 75%, rgba(1,120,82,1) 100%);
+}
+
 .acc-style-news,
 .acc-style-riot,
 .acc-style-game,
 .acc-style-job {
-    color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
+    border-bottom: .5rem solid #1b1a1a;
+    padding: 0;
 }
 
 .acc-style-news {
+    color: red;
+}
 
+.acc-style-riot {
+    color: rgb(136, 42, 136);
+}
+
+.acc-style-game {
+    color: #00c8c8;
+}
+
+.acc-style-job {
+    color: orange;
+}
+.acc-title {
+    margin-left: 5rem;
+    background-color: #1b1a1a;
+    padding: .5rem 3rem;
+}
+
+.acc-style-news {
     background: rgb(0,0,0);
-    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%);
+    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%); */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,43,2,1) 70%, rgba(77,76,19,1) 100%); */
+    background-image: url('/mediahub/home/red.jpg');
+    background-size:cover;
 }
 
 .acc-style-riot {
     background: rgb(0,0,0);
-    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%);
+    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%); */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,2,2,1) 70%, rgba(60,15,15,1) 100%); */
+    background-image: url('/mediahub/home/puprle.jpg');
+    background-size:cover;
 }
 
 .acc-style-game {
     background: rgb(0,0,0);
-    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%);
+    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%); */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(38,2,43,1) 70%, rgba(45,15,60,1) 100%); */
+    background-image: url('/mediahub/home/mint.jpg');
+    background-size:cover;
 }
 
 .acc-style-job {
     background: rgb(0,0,0);
-    background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%);
+    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%); */
+    /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 45%, rgba(0,8,85,1) 100%); */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 70%, rgba(1,6,42,1) 100%);
+    background-image: url('/mediahub/home/orange.jpg');
+    background-size:cover;
 }
 
+/* ======================= LIST GROUP JOB HIRING ==================== */
+.list-group-item {
+    background-color: #000000c0;
+    color: #e7e6e3;
+    font-size: 1.5rem;
+}
 
+.list-group-item:hover {
+    color: rgb(209, 54, 57);
+}
 
 
 

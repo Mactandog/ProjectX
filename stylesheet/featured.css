@@ -31,7 +31,7 @@
 
 .parallax-background .title h1 {
     text-align: center;
-    color: #d1363a;
+    color: #fff;
     font-size: 5em;
     font-weight: 900;
     letter-spacing: .5em;
@@ -46,7 +46,8 @@ main {
 }
 
 .feat-pg-container {
-    background-color:#797979;
+    /* background-color:#797979; */
+    background-color: rgb(209, 54, 57);
     margin: 5rem 2rem -13rem 2rem;
     padding-top: 0.5rem;
     clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
@@ -57,7 +58,8 @@ main {
 .pg-container-border {
     display: flex;
     flex-direction: column;
-    background-color: #0f1519;
+    /* background-color: #0f1519; */
+    background-image: url('/mockup/images/texture-light@2x.jpg');
     clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
     padding: 5rem 20px 20px 20px;
 }
@@ -128,7 +130,7 @@ main {
 .latest-feat-heading h1 {
     font-size: 4em;
     font-weight: 700;
-    color: #fff;
+    color: #0a0e13;
     margin: 2rem 0;
 }
 
@@ -140,7 +142,7 @@ main {
     row-gap: 4em;
 }
 
-.featured-list a .card-features {
+.featured-list > a > .card-features {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -149,7 +151,7 @@ main {
 
 a .card-features .image-holder {
     width: 100%;
-    height: 40vh;
+    height: 100%;
 }
 
 .card-features .image-holder img {
@@ -160,6 +162,11 @@ a .card-features .image-holder {
 
 .featured-list a {
     text-decoration: none;
+}
+
+.card-features {
+    margin-bottom: 3rem;
+    padding: 1rem;
 }
 
 a .card-features .image-holder {
@@ -180,7 +187,7 @@ a .card-features .image-holder::before {
     transition: clip-path 200ms ease-out;
 }
 
-.featured-list-container a.btn-show-more::before {
+a.btn-show-more::before {
     content: '';
     position: absolute;
     left: 0;
@@ -195,7 +202,7 @@ a .card-features .image-holder::before {
 }
   
 a .card-features .image-holder::before,
-.featured-list-container a.btn-show-more::before {
+a.btn-show-more::before {
     clip-path: polygon(
       0% 0%,
       0% 0%,
@@ -204,8 +211,8 @@ a .card-features .image-holder::before,
     );
 }
 
-a .card-features .image-holder:hover::before,
-.featured-list-container a.btn-show-more:hover::before {
+a:hover .card-features .image-holder::before,
+a.btn-show-more:hover::before {
     clip-path: polygon(
       0% 0%,
       calc(100% + 1rem) 0%,
@@ -214,7 +221,7 @@ a .card-features .image-holder:hover::before,
     );
 }
 
-a .card-features .image-holder:active::before {
+a:hover .card-features .image-holder:active::before {
     clip-path: polygon(
       calc(100% + 1rem) 0%,
       calc(100% + 1rem) 0%,
@@ -227,11 +234,19 @@ a .card-features .image-holder:active::before {
     padding: 0 2em 1em 2em;
     text-align: center;
     color: #0f1519;
+    background-color: #2e2d2d3f; 
+    border-bottom: 3px solid #0a0e13; 
+}
+.col > a {
+    text-decoration: none;
 }
 
 .card-features .text-holder h2,
 .card-features .text-holder h4 {
     font-weight: 600;
+}
+.card-features .text-holder h2 {
+    padding-top: 1rem;
 }
 
 .card-features .text-holder h4 {
@@ -250,8 +265,8 @@ a .card-features .image-holder:active::before {
     justify-content: center;
     align-items: center;
 }
-.featured-list-container .btn-show-more {
-    background-color: #2e2d2d91;
+.btn-show-more {
+    background-color: #0f1519;
     color: #fff;
     text-decoration: none;
     font-size: 1em;
@@ -261,17 +276,37 @@ a .card-features .image-holder:active::before {
     border: none;
     padding: 0.5em 0.5em 0.5em 0.8em;
     position: relative;
+    width: 200px;
+    align-self: center;
 }
 
-.featured-list-container .btn-show-more .btn-style span {
-    color: #0f1519;
+.btn-show-more:hover {
+    color: #fff;
+}
+
+.btn-show-more .btn-style span {
+    color: #fff;
     padding-left: 0.2em;
 }
 
-.featured-list-container .btn-show-more .btn-style {
+.btn-show-more:hover .btn-style span {
+    color: #0f1519;
+}
+.btn-show-more .btn-style {
     position: relative;
     z-index: 1;
 
 }
 
+.continue {
+    text-decoration: none;
+    color: #d1363a;
+}
+
+.continue:hover {
+    text-decoration: underline;
+    color: #d1363a;
+}
 /* -------------------- END OF FEATURED LIST --------------------------- */
+
+
