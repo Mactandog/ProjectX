@@ -325,9 +325,6 @@ a:hover > .card > img {
     color: #fff;
 }
 
-.accordion-button {
-    /* height: 10rem; */
-}
 .accordion-button:hover {
     color: #8fa3b0
 }
@@ -352,7 +349,7 @@ a:hover > .card > img {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(77,76,19,1) 100%);
 }
 
-.orange-bg {
+.bg-orange {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(84,49,1,1) 75%, rgba(120,78,1,1) 100%);
 }
