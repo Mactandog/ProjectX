@@ -110,6 +110,7 @@
     background-color: #252423;
     /* margin-bottom: 50px; */
     border-top: 5px solid rgb(209, 54, 57);
+    /* clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 100%); */
 }
 
 .cards-container > .card-news
@@ -192,6 +193,7 @@
     background-color: rgba(0, 0, 0, 0.479);
     overflow: hidden;
     border-radius: 1em;
+    text-decoration: none;
 }
 
 .card-esports:hover {
@@ -329,9 +331,14 @@ a:hover > .card > img {
     color: #8fa3b0
 }
 
+.accordion-body {
+    object-fit: cover;
+}
+
 .blue-bg {  
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(1,6,42,1) 100%);
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(1,6,42,1) 100%); */
+    background-image: url('/mediahub/home/image.jpg');
 }
 
 .purple-bg {
@@ -355,8 +362,9 @@ a:hover > .card > img {
 }
 
 .bg-mint {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,84,54,1) 75%, rgba(1,120,82,1) 100%);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,84,54,1) 75%, rgba(1,120,82,1) 100%); */
+    background-image: url('/mediahub/home/image.jpg');
 }
 
 .acc-style-news,
@@ -367,6 +375,7 @@ a:hover > .card > img {
     border-bottom: .5rem solid #1b1a1a;
     padding: 0;
     background-size:cover;
+    font-family: 'Staatliches', cursive;
 }
 
 .acc-style-news {
@@ -402,7 +411,33 @@ a:hover > .card > img {
     color: rgb(209, 54, 57);
 }
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
+/* Carousel base class */
+
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    /* max-height: 32rem; */
+    
+  }
+
+  .slide {
+    background-color: rgb(209, 54, 57);
+  }
+
+  .carousel .carousel-inner {
+    margin-bottom: 1rem;
+  }
+
+
+  
 
 
 /* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -474,9 +509,9 @@ a:hover > .card > img {
     align-items: center;
 } */
 
-.riot-logo-box {
+/* .riot-logo-box {
     margin-bottom: 10px;
-}
+} */
 
 /* .footer-container .riot-logo-box {
     width: 100px;

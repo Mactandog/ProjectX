@@ -306,7 +306,10 @@
                 aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body bg-red">
+                <div
+                  class="accordion-body"
+                  style="background-image: url('mediahub/home/image.jpg')"
+                >
                   <!-- -====== CONTENT -====== -->
                   <div class="container-fluid">
                     <div class="row p-4">
@@ -475,7 +478,10 @@
                 aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body purple-bg">
+                <div
+                  class="accordion-body"
+                  style="background-image: url('mediahub/home/image.jpg')"
+                >
                   <div class="container-fluid">
                     <div class="row p-4">
                       <div class="col col-md-6">
@@ -642,7 +648,10 @@
                 aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body bg-mint">
+                <div
+                  class="accordion-body"
+                  style="background-image: url('mediahub/home/image.jpg')"
+                >
                   <div class="container-fluid">
                     <div class="row p-4">
                       <div class="col col-md-6">
@@ -810,7 +819,10 @@
                 aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body bg-orange">
+                <div
+                  class="accordion-body"
+                  style="background-image: url('mediahub/home/image.jpg')"
+                >
                   <div class="container-fluid">
                     <h1 class="text-white display-4">Open Positions</h1>
                     <div class="list-group list-group-flush text-wrap">
@@ -895,74 +907,131 @@
 
         <div class="esports-container">
           <div class="title-bar">Esports</div>
-
-          <div class="cards-container-esports">
-            <div class="card-esports">
-              <div class="inner-content">
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus vitae natus similique dolorem, excepturi expedita
-                  temporibus veritatis beatae doloremque deserunt placeat ullam
-                  voluptate eveniet ex provident. Numquam vero tempora aliquam?
-                </p>
+          <!-- ============ CAROUSEL ===================== -->
+          <div
+            id="myCarousel"
+            class="carousel slide gy-0"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-container-esports">
+                  <a href="#" class="card-esports">
+                    <div class="inner-content">
+                      <h2>Title</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellendus vitae natus similique dolorem, excepturi
+                        expedita temporibus veritatis beatae doloremque deserunt
+                        placeat ullam voluptate eveniet ex provident. Numquam
+                        vero tempora aliquam?
+                      </p>
+                    </div>
+                    <div class="inner-image">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/S01RQhZ-SiA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="inner-image">
-                <img
-                  src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                  alt="LOL Esports"
-                />
+              <div class="carousel-item">
+                <div class="cards-container-esports">
+                  <a href="#" class="card-esports">
+                    <div class="inner-content">
+                      <h2>Title</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellendus vitae natus similique dolorem, excepturi
+                        expedita temporibus veritatis beatae doloremque deserunt
+                        placeat ullam voluptate eveniet ex provident. Numquam
+                        vero tempora aliquam?
+                      </p>
+                    </div>
+                    <div class="inner-image">
+                      <img
+                        src="mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
+                        alt="LOL Esports"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-container-esports">
+                  <a href="#" class="card-esports">
+                    <div class="inner-content">
+                      <h2>Title</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellendus vitae natus similique dolorem, excepturi
+                        expedita temporibus veritatis beatae doloremque deserunt
+                        placeat ullam voluptate eveniet ex provident. Numquam
+                        vero tempora aliquam?
+                      </p>
+                    </div>
+                    <div class="inner-image">
+                      <img
+                        src="mockup/images/VCT_RoadtoChampions_Jinggg_optimized.jpg"
+                        alt="LOL Esports"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="cards-container-esports">
-            <div class="card-esports">
-              <div class="inner-content">
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus vitae natus similique dolorem, excepturi expedita
-                  temporibus veritatis beatae doloremque deserunt placeat ullam
-                  voluptate eveniet ex provident. Numquam vero tempora aliquam?
-                </p>
-              </div>
-              <div class="inner-image">
-                <img
-                  src="mockup/images/VCT_RoadtoChampions_Jinggg_optimized.jpg"
-                  alt="LOL Esports"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="cards-container-esports">
-            <div class="card-esports">
-              <div class="inner-content">
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus vitae natus similique dolorem, excepturi expedita
-                  temporibus veritatis beatae doloremque deserunt placeat ullam
-                  voluptate eveniet ex provident. Numquam vero tempora aliquam?
-                </p>
-              </div>
-              <div class="inner-image">
-                <!-- <img
-                  src="/mockup/images/W22_TEMPLATE_16x9_KV_GENERIC_PLAYINS.png"
-                  alt="LOL Esports"
-                /> -->
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/S01RQhZ-SiA"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </main>

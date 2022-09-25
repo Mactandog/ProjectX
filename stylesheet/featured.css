@@ -59,7 +59,7 @@ main {
     display: flex;
     flex-direction: column;
     /* background-color: #0f1519; */
-    background-image: url('/mockup/images/texture-light@2x.jpg');
+    
     clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
     padding: 5rem 20px 20px 20px;
 }
