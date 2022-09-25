@@ -366,11 +366,11 @@ a:hover > .card > img {
     font-size: 3rem;
     border-bottom: .5rem solid #1b1a1a;
     padding: 0;
+    background-size:cover;
 }
 
 .acc-style-news {
     color: red;
-    background-size:cover;
 }
 
 .acc-style-riot {
@@ -389,39 +389,6 @@ a:hover > .card > img {
     margin-left: 5rem;
     background-color: #1b1a1a;
     padding: .5rem 3rem;
-}
-
-.acc-style-news {
-    /* background: rgb(0,0,0); */
-    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%); */
-    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,43,2,1) 70%, rgba(77,76,19,1) 100%); */
-    /* background-image: url('./mediahub/home/red.jpg'); */
-    
-}
-
-.acc-style-riot {
-    /* background: rgb(0,0,0); */
-    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%); */
-    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,2,2,1) 70%, rgba(60,15,15,1) 100%); */
-    background-image: url('./mediahub/home/puprle.jpg');
-    background-size:cover;
-}
-
-.acc-style-game {
-    /* background: rgb(0,0,0); */
-    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%); */
-    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(38,2,43,1) 70%, rgba(45,15,60,1) 100%); */
-    background-image: url('./mediahub/home/mint.jpg');
-    background-size:cover;
-}
-
-.acc-style-job {
-    /* background: rgb(0,0,0); */
-    /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%); */
-    /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 45%, rgba(0,8,85,1) 100%); */
-    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 70%, rgba(1,6,42,1) 100%); */
-    background-image: url('./mediahub/home/orange.jpg');
-    background-size:cover;
 }
 
 /* ======================= LIST GROUP JOB HIRING ==================== */
