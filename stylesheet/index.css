@@ -397,7 +397,7 @@ a:hover > .card > img {
     /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(48, 41, 1) 45%, rgb(73, 71, 0) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(39,43,2,1) 70%, rgba(77,76,19,1) 100%); */
-    background-image: url('mediahub/home/red.jpg');
+    background-image: url('/mediahub/home/red.jpg');
     background-size:cover;
 }
 
@@ -405,7 +405,7 @@ a:hover > .card > img {
     /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(51, 4, 4) 45%, rgb(99, 0, 0) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,2,2,1) 70%, rgba(60,15,15,1) 100%); */
-    background-image: url('mediahub/home/puprle.jpg');
+    background-image: url('/mediahub/home/puprle.jpg');
     background-size:cover;
 }
 
@@ -413,7 +413,7 @@ a:hover > .card > img {
     /* background: rgb(0,0,0); */
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(41, 2, 61) 45%, rgb(51, 1, 90) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(38,2,43,1) 70%, rgba(45,15,60,1) 100%); */
-    background-image: url('mediahub/home/mint.jpg');
+    background-image: url('/mediahub/home/mint.jpg');
     background-size:cover;
 }
 
@@ -422,7 +422,7 @@ a:hover > .card > img {
     /* background: linear-gradient(104deg, rgba(0,0,0,1) 0%, rgb(2, 4, 31) 45%, rgb(0, 8, 77) 100%); */
     /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 45%, rgba(0,8,85,1) 100%); */
     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,4,43,1) 70%, rgba(1,6,42,1) 100%); */
-    background-image: url('mediahub/home/orange.jpg');
+    background-image: url('/mediahub/home/orange.jpg');
     background-size:cover;
 }
 
