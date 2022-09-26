@@ -5,6 +5,47 @@
 main {
     margin-top: -1.5rem;
 }
+
+/* ===================== BANNER ================= */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(209, 54, 57);
+  }
+
+  .banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .title-img {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .banner .title-img img {
+    width: 100%;
+  }
+
+  .banner .title-img .vct-logo {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 10%;
+  }
+
+/* ================================================= */
+
+
 .container-main {
     height: 100vh;
     scroll-behavior: smooth;
@@ -20,18 +61,7 @@ main {
     border-bottom: 2px solid rgb(209, 54, 57);
 }
 
-.banner-container {
-    width: 100%;
-    height: 60vh;
-    border-bottom: 2px solid rgb(209, 54, 57);
-    margin-top: 0;
-}
 
-.banner-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* .content {
     display: grid;
@@ -283,20 +313,111 @@ a.btn-show-more:hover::before,
 
 /* ====== BOOTSTRAP ======= */
 .featured-content {
-    background-color: #0a0e13;
+    background-color: #000000;
 }
+.container4 {
+    background-color: #000000;
+    height: 8rem;
+    background-size: auto 40%;
+    background-repeat: repeat-x;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
 
 .feat-title {
-    color: #fff;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 5em;
+    text-transform: uppercase;  
 }
 
+.intro {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.vct {
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.s1 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    color: #8fa3b0;
+}
+.new {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.valorant {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.champions {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.tour {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3 {
+    position: absolute;
+    background-color: rgb(209, 54, 57);
+  }
+
+.rectangle1 {
+    top: 10%;
+    left: 0;
+    width: 6%;
+    height: 30px;
+
+  }
+
+.rectangle2 {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 20%;
+    height: 30px;
+    background-color: #fff;
+  }
+
+.rectangle3 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 30%;
+    height: 30px;
+}
+
+  
+
 .lead {
+    padding: 0 10rem;
     color: #bec7cc;
 }
 
 .continue {
     color: rgb(209, 54, 57);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .continue:hover {
@@ -351,3 +472,23 @@ a:hover > .card > img {
 
 
 
+/* =============== Youtube iframe ====================== */
+.feat-video-container {
+    background-color: #000000;
+    border-top: 2px solid #232629;
+    border-bottom: 2px solid #232629;
+}
+
+.yt {
+padding: 0 10rem;
+margin-bottom: -9px;
+}
+
+.yt > iframe {
+
+    aspect-ratio: 16 / 9;
+    border-left: 2px solid #232629;
+    border-right: 2px solid #232629;
+    border-bottom: 2px solid #232629;
+    
+}

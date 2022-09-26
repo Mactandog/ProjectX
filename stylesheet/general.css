@@ -361,6 +361,10 @@ header nav a:hover
 
 /* ----------------------- END OF FOOTER ----------------------- */
 
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@ */
+
 /* ====== HEADER SEARCH FORM ===== */
 @media screen and (min-width: 991px) and (max-width: 1200px) {
   .head-form {
@@ -369,6 +373,22 @@ header nav a:hover
 }
 
 /* ======= FOOTER ADJUSTMENT ======== */
+
+/*  ============= max-width 375px ============ */
+
+@media screen and (max-width: 475px) {
+.footer {
+  padding: 0;
+}
+
+.footer-container {
+  margin: 10px 0;
+}
+}
+
+
+
+/*  ============= max-width 991px ============ */
 @media screen and (max-width: 991px) {
   .nav-footer {
     padding: 1rem 0;
@@ -394,9 +414,7 @@ header nav a:hover
 }
 
 @media screen and (max-width: 635px) {
-  .riot-logo-box {
-    /* width: ; */
-}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
