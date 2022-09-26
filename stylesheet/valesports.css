@@ -20,10 +20,13 @@ main {
   .banner video {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3%;
     object-fit: cover;
+    object-position: center;
     width: 100%;
     height: 100%;
+    transform: translateZ(-1px) scale(1.2);
+    z-index: -1;
   }
 
   .banner .title-img {
@@ -39,7 +42,7 @@ main {
   .banner .title-img .vct-logo {
     position: absolute;
     top: 0;
-    left: 42%;
+    left: 47%;
     width: 10%;
   }
 
@@ -202,9 +205,7 @@ a.btn-show-more:hover::before,
     border-radius: 3em;
     margin-top: 2em;
     border: none;
-    /* padding: 0.3em 0.3em 0.3em 0.8em; */
     position: relative;
-    width: 1rem;
     align-self: center;
     text-align: center;
 }
@@ -490,5 +491,213 @@ margin-bottom: -9px;
     border-left: 2px solid #232629;
     border-right: 2px solid #232629;
     border-bottom: 2px solid #232629;
-    
 }
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 500px) {
+
+    .btn-show-more {
+        font-size: 1em;
+        border-radius: 3em;
+        width: 5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .banner video {
+        left: 5%;
+      }
+
+      .banner .title-img .vct-logo {
+        left: 47%;
+      }
+
+    .s1 {
+        font-size: 2rem;
+        left: 15%;
+    }
+
+    .new {
+        font-size: 3rem;
+        top: 13%;
+        left: 25%;
+    }
+    .valorant {
+        font-size: 3rem;
+        top: 27%;
+        left: 25%;
+    }
+
+    .champions {
+        font-size: 3rem;
+        top: 41%;
+        left: 10%;
+    }
+    
+    .tour {
+        font-size: 3rem;
+        top: 55%;
+        left: 40%;
+    }
+
+    .rectangle3 {
+        position: absolute;
+        bottom: 17%;
+        right: 0;
+        width: 40%;
+        height: 30px;
+    }
+
+    .vct {
+        height: 20rem;
+    }
+
+    .lead {
+        padding: 0 2rem;
+    }
+
+    .yt {
+        padding: 0 1rem;
+    }
+
+    .container4 {
+        height: 5.8rem;
+        background-size: auto 40%;
+        background-repeat: repeat-x;
+        width: 100%;
+        margin-top: 0rem;
+    }
+
+    .btn-show-more {
+        font-size: 1em;
+        border-radius: 3em;
+        width: 2rem;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 990px) {
+    .yt {
+    padding: 0 2rem;
+    } 
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+
+    .banner video {
+        left: 3%;
+      }
+
+      .banner .title-img .vct-logo {
+        left: 47%;
+      }
+
+    .s1 {
+        font-size: 2rem;
+        left: 25%;
+    }
+
+    .new {
+        font-size: 3rem;
+        top: 13%;
+        left: 35%;
+    }
+    .valorant {
+        font-size: 3rem;
+        top: 27%;
+        left: 35%;
+    }
+
+    .champions {
+        font-size: 3rem;
+        top: 41%;
+        left: 25%;
+    }
+    
+    .tour {
+        font-size: 3rem;
+        top: 55%;
+        left: 43%;
+    }
+
+    .rectangle3 {
+        position: absolute;
+        bottom: 17%;
+        right: 0;
+        width: 40%;
+        height: 30px;
+    }
+
+    .vct {
+        height: 19rem;
+    }
+
+    .lead {
+        padding: 0 2rem;
+    }
+
+}
+
+
+@media (min-width: 1400px) { 
+      .banner .title-img .vct-logo {
+        left: 47%;
+      }
+
+    .s1 {
+        font-size: 5rem;
+        left: 27%;
+    }
+
+    .new {
+        font-size: 7rem;
+        top: 13%;
+        left: 45%;
+    }
+    .valorant {
+        font-size: 7rem;
+        top: 30%;
+        left: 45%;
+    }
+
+    .champions {
+        font-size: 7rem;
+        top: 47%;
+        left: 35%;
+    }
+    
+    .tour {
+        font-size: 7rem;
+        top: 65%;
+        left: 48%;
+    }
+
+    .rectangle3 {
+        position: absolute;
+        bottom: 6%;
+        right: 0;
+        width: 40%;
+        height: 50px;
+    }
+
+    .vct {
+        height: 40rem;
+    }
+
+    .lead {
+        padding: 0 6rem;
+        font-size: 3rem;
+    }
+
+    .continue {
+        font-size: 2.5rem;
+    }
+
+    .container4 {
+        height: 12rem;
+    }
+ }

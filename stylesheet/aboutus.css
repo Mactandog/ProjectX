@@ -70,3 +70,13 @@ max-height: 70vh;
 
 
 }
+
+@media screen and (max-width: 520px) {
+    .carousel-caption p {
+      display: none;
+      }
+
+      .featurette-heading {
+        font-size: 3rem;
+      }
+}

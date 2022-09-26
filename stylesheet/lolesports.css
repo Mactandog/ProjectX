@@ -169,9 +169,7 @@ a.btn-show-more:hover::before,
     border-radius: 3em;
     margin-top: 2em;
     border: none;
-    /* padding: 0.3em 0.3em 0.3em 0.8em; */
     position: relative;
-    width: 1rem;
     align-self: center;
     text-align: center;
 }
@@ -341,6 +339,54 @@ a:hover > .card > img {
   transform: scale(1.05);
   transform-origin: 50% 50%;
 }
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 3rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    max-height: 32rem;
+  }
+  
+  
+/* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 500px) {
+    .carousel-caption {
+        padding: 0 .5rem;
+        bottom: 1rem;
+        z-index: 10;
+        font-size: .8rem;
+      }
+
+      .carousel-caption p {
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7; /* number of lines to show */
+                line-clamp: 7;
+        -webkit-box-orient: vertical;
+      }
+}
+
+@media screen and (min-width: 500px) {
+    .btn-show-more {
+        width: 10rem;
+    }
+}
+
+
 
 
 

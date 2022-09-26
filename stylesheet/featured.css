@@ -132,6 +132,28 @@ main {
     margin: 2rem 0;
 }
 
+.latest-feat-heading {
+    position: relative;
+}
+
+.rectangle {
+    position: absolute;
+    bottom: 10%;
+    left: -2%;
+    width: 35vw;
+    height: 15px;
+    background-color: #0a0e13;
+  }
+
+  .rectangle2 {
+    position: absolute;
+    bottom: 15%;
+    left: -2%;
+    width: 100%;
+    height: 3px;
+    background-color: #0a0e13;
+  }
+
 .featured-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -252,9 +274,13 @@ a:hover .card-features .image-holder:active::before {
 }
 
 .card-features .text-holder h5 {
-    color: #2e2d2d;
+    font-size: medium;
     font-weight: 500;
-    padding-top: 1em;
+    margin-top: 1em;
+}
+
+.card-features .text-holder h5 .text-white {
+    padding: 0 .3rem;
 }
 
 .featured-list-container {
@@ -269,8 +295,6 @@ a:hover .card-features .image-holder:active::before {
     text-decoration: none;
     font-size: 1em;
     border-radius: 3em;
-    margin-top: 2em;
-    /* width: 8em; */
     border: none;
     padding: 0.5em 0.5em 0.5em 0.8em;
     position: relative;
@@ -312,9 +336,8 @@ a:hover .card-features .image-holder:active::before {
 
 @media screen and (max-width: 475px) {
     .parallax-background .background {
-        transform: translateZ(-15px) scale(4);
+        transform: translateZ(-15px) scale(8);
     }
-
 
     .parallax-background .title h1 {
         font-size: 3em;
@@ -328,5 +351,13 @@ a:hover .card-features .image-holder:active::before {
         flex-direction: column;
         clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
         padding: 5rem 0 20px 0;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 912px){
+    .parallax-background .background {
+        transform: translateZ(-30px) scale(13.5);
     }
 }
