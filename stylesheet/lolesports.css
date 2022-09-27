@@ -371,7 +371,6 @@ a:hover > .card > img {
       }
 
       .carousel-caption p {
-        
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -394,5 +393,10 @@ a:hover > .card > img {
     }
 }
 
+@media screen and (max-width: 580px) {
+    .carousel-caption p {
+        display: none;
+    }
+}
 
 
