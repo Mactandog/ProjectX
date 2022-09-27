@@ -124,7 +124,6 @@ header nav a:hover
 /* ======================= BOOTSTRAP HEADER ============== */
 .logo-container {
     margin-right: 2rem;
-    text-decoration: none;
   }
 
   .logo-container .span1,
@@ -267,6 +266,11 @@ header nav a:hover
     border: 1px solid white;
   }
 
+  .btn-close {
+    background-color: rgb(209, 54, 57);
+    opacity: 1;
+}
+
   /* --------------- END OF BOOTSTRAP HEADER --------------- */
 
 
@@ -281,7 +285,7 @@ header nav a:hover
     margin-bottom: 10px;
     align-self: flex-start;
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .riot-logo-box:hover {
