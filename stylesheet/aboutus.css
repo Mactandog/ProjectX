@@ -7,8 +7,12 @@
 }
 
 .container-main {
-background-color: #e7e6e3;
-}
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #e7e6e3;
+} 
+
 
 .lead {
 text-align: justify;
@@ -76,6 +80,13 @@ max-height: 70vh;
       display: none;
       }
 
+      .featurette-heading {
+        font-size: 3rem;
+      }
+}
+
+
+@media screen and (min-width: 250px) {
       .featurette-heading {
         font-size: 3rem;
       }

@@ -255,13 +255,13 @@ header nav a:hover
     border-radius: 10px;
   }
 
-  .btn {
+  .btn-head {
     padding: 0.2rem;
     background-color: rgb(209, 54, 57);
     color: white;
   }
 
-  .btn:hover {
+  .btn-head:hover {
     background-color: rgba(54, 209, 67, 0.541);
     border: 1px solid white;
   }
@@ -413,9 +413,12 @@ header nav a:hover
 
 }
 
-@media screen and (max-width: 635px) {
-
-}
+@media only screen and (min-width: 768px) {
+    .nav-footer a {
+      /* font-size: large; */
+    }
+  
+} 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {

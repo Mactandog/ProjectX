@@ -1,0 +1,152 @@
+body {
+    background-color: #fff;
+    color: #0f1519;
+}
+
+.article {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(0,0,0,1),transform .8s cubic-bezier(0,0,0,1);
+    background-color: #fff;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0a0e13;
+    z-index: -1;
+    filter: grayscale(70%);
+}
+
+.bg-image img {
+    width: 100%;
+
+}
+
+.article-image {
+    width: 100%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.article-image img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: rgb(0, 110, 255);
+    padding: 0 .5rem;
+    font-size: medium;
+    color: #fff;
+}
+
+.date {
+    font-size: large;
+}
+
+.share {
+    text-decoration: none;
+    color: rgb(209, 54, 57);
+}
+
+.share:hover {
+    color: #0f1519;
+}
+
+.head-title {
+    border-top: .1rem solid #8fa3b065;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.content {
+    text-align: justify;
+}
+
+.indent {
+    margin-left: 3rem;
+}
+
+.video1 {
+    width: 100%;
+}
+
+.video1 iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal-content {
+    background-color: #0a0e13;
+    color: #fff;
+}
+
+
+
+.btn-close {
+    background-color: rgb(209, 54, 57);
+    opacity: 1;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body a {
+    font-size: 40px;
+    padding: 10px;
+    color: #fff;
+}
+
+.modal-body a:hover {
+    color: rgb(209, 54, 57);
+}
+
+
+
+
+@media (max-width: 720px) {
+    .bg-image {
+        height: 150px;
+    }
+
+    .article-image {
+        width: 90%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1075px) {
+    .bg-image {
+        height: 250px;
+    }
+
+    .article-image {
+    width: 80%;
+    }
+
+    .article-image img {
+        margin-top: 24px;
+    }
+}
+
+@media (min-width: 1076px) {
+    .bg-image {
+       height: 450px;
+    }
+
+    .article-image img {
+        margin-top: 3rem;
+        padding: 0 2rem;
+    }
+}

@@ -1,7 +1,4 @@
-/* nav a:nth-child(3) {
-    background-color: rgb(209, 54, 57);
-    border-radius: 10px;
-} */
+
 main {
     margin-top: -1.5rem;
 }
@@ -45,9 +42,6 @@ main {
 ._content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    /* margin-bottom: 2rem; */
     margin: 2rem;
 }
 
@@ -55,7 +49,6 @@ main {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #fff;
-    /* margin-left: -28rem; */
 }
 
 .news-container {
@@ -235,16 +228,18 @@ a.btn-show-more:hover::before,
     z-index: 1;
 }
 
-.image-match {
+/* .image-match {
     width: 14vw;
-}
+} */
 
 .image-match img {
     width: 100%;
     height: 100%;
 }
 
-
+.details {
+    padding-left: .5rem;
+}
 .details .match-game {
     font-weight: 500;
     color: #fff;
@@ -386,7 +381,12 @@ a:hover > .card > img {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .vod-container li a {
+        grid-template-columns: 30vw 1fr;
 
+    }
+}
 
 
 
