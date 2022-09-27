@@ -264,7 +264,7 @@ a.btn-show-more:hover::before,
 .vod-container li a {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     background-color: #232629;
     height: 20vh;
@@ -276,7 +276,7 @@ a.btn-show-more:hover::before,
 
 .team-logo {
     display: flex;
-    max-width: 350px;
+    max-width: 160px;
     min-width: 100px;
     margin-right: .5rem;
 }

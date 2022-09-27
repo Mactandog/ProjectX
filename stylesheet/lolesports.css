@@ -348,11 +348,17 @@ a:hover > .card > img {
     z-index: 10;
   }
   
+  .carousel-caption:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
   /* Declare heights because of positioning of img element */
   .carousel-item {
     max-height: 32rem;
+
   }
-  
+
   
 /* @@@@@@@@@@@@@@@@@@@@@ MEDIA QUERIES @@@@@@@@@@@@@@@@@@ */
 

@@ -36,15 +36,17 @@ body {
     width: 100%;
     object-fit: cover;
     z-index: 3;
+    position: relative;
 }
 
 .article-image img {
     width: 100%;
     margin-top: 15px;
+    z-index: 2;
 }
 
 .tag {
-    background-color: rgb(0, 110, 255);
+    background-color: rgb(209, 54, 57);
     padding: 0 .5rem;
     font-size: medium;
     color: #fff;
@@ -112,8 +114,29 @@ body {
     color: rgb(209, 54, 57);
 }
 
+.goBack-btn {
+    font-size: 1rem;
+    color: rgb(209, 54, 57);
+    background-color: #0a0e13;
+    position: absolute;
+    left: 1%;
+    top: 105%;
+    padding: .2rem 1rem;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+    z-index: -1;  
+}
+
+.goBack-btn:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 
 
+@media (max-width: 600px) {
+    .goBack-btn {
+        font-size: .6rem;
+    }
+}
 
 @media (max-width: 720px) {
     .bg-image {
@@ -138,6 +161,10 @@ body {
     .article-image img {
         margin-top: 24px;
     }
+
+    .content {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 1076px) {
@@ -148,5 +175,9 @@ body {
     .article-image img {
         margin-top: 3rem;
         padding: 0 2rem;
+    }
+
+    .content {
+        font-size: 1.8rem;
     }
 }

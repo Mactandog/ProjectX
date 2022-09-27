@@ -124,6 +124,7 @@ header nav a:hover
 /* ======================= BOOTSTRAP HEADER ============== */
 .logo-container {
     margin-right: 2rem;
+    text-decoration: none;
   }
 
   .logo-container .span1,
@@ -280,6 +281,11 @@ header nav a:hover
     margin-bottom: 10px;
     align-self: flex-start;
     color: #fff;
+    text-decoration: none;
+}
+
+.riot-logo-box:hover {
+  color: #fff;
 }
 
 .riot-logo-box img {
@@ -413,12 +419,10 @@ header nav a:hover
 
 }
 
-@media only screen and (min-width: 768px) {
-    .nav-footer a {
-      /* font-size: large; */
-    }
+/* @media only screen and (min-width: 768px) {
+
   
-} 
+}  */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {

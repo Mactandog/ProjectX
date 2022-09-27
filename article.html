@@ -25,7 +25,7 @@
       src="https://kit.fontawesome.com/149b35f412.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="stylesheet/general.css" />
+    <link rel="stylesheet" href="./stylesheet/general.css" />
     <link rel="stylesheet" href="./stylesheet/article.css" />
   </head>
   <body>
@@ -33,10 +33,10 @@
       <a href="#" id="top"></a>
       <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-          <div class="logo-container">
+          <a href="./index.html" class="logo-container">
             <span class="span1">THE</span>
             <span class="span2">PORTAL</span>
-          </div>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -71,15 +71,17 @@
                 class="navbar-nav flex-grow-1 pe-3 align-self-lg-center align-self-md-center align-self-xl-center justify-content-end"
               >
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
+                  <a class="nav-link" aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="featured.html">Featured</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="news.html"
+                    >News</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="ourgames.html">Our Games</a>
@@ -171,10 +173,15 @@
             </div>
             <div class="article-image container px-0">
               <img src="./mediahub/Article/rgxsola-whitelogo.jpg" alt="" />
+              <div class="goBack-btn" onclick="history.back()">
+                <i class="fa-sharp fa-solid fa-left-long"></i>
+                Go back
+              </div>
             </div>
+
             <div class="mt-2 mb-4 rounded-3 p-0">
               <div
-                class="container-fluid py-5 px-3 px-md-4 px-lg-5 text-center"
+                class="container-fluid py-5 px-3 px-sm-5 px-md-5 px-lg-5 text-center"
               >
                 <h4>
                   <span class="tag">ESPORTS</span>
@@ -223,7 +230,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div class="container-fluid px-3 px-lg-5 px-md-4 text-center">
+          <div class="container-fluid px-3 px-sm-5 px-lg-5 px-md-5 text-center">
             <h1 class="fw-semibold head-title">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </h1>
@@ -245,7 +252,7 @@
           class="footer-container row row-cols-1 row-cols-xl-4 row-cols-lg-2 align-items-center justify-content-around"
         >
           <div class="col-6 col-sm-3 col-md-3 col-xl-2 col-lg-4">
-            <div class="riot-logo-box">
+            <a href="./index.html" class="riot-logo-box">
               <img
                 src="mediahub/ThePortal.png"
                 alt="The Portal Logo"
@@ -257,22 +264,22 @@
                 class="riot"
                 alt="Riot Games Logo"
               />
-            </div>
+            </a>
           </div>
           <div class="col-xl-6 col-lg-8">
             <div class="nav-footer">
-              <a href="">Press</a>
-              <a href="">Legal</a>
-              <a href="">Accessibility</a>
-              <a href="">Terms of Service</a>
+              <a href="#">Press</a>
+              <a href="#">Legal</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Terms of Service</a>
             </div>
           </div>
           <div class="col-xl-2 col-md-3 col-lg-3">
             <div class="social-link">
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
           <div class="col-xl-2 col-md-3 col-lg-3">
