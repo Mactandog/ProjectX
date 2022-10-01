@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Home | The Portal" />
+    <meta property="og:site_name" content="The Portal" />
+    <meta property="og:url" content="https://mactandog.github.io/ThePortal/" />
+    <meta
+      property="og:description"
+      content="A Riot Games inspired website by Ryan Mark Eyana."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./mediahub/theportalimg.jpg" />
     <title>Home | The Portal</title>
     <link
       rel="shortcut icon"
       href="./mediahub/icon-theportal.jpeg"
       type="image/x-icon"
     />
-    <!-- CSS only -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,8 +34,8 @@
       src="https://kit.fontawesome.com/149b35f412.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="stylesheet/index.css" />
-    <link rel="stylesheet" href="stylesheet/general.css" />
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+    <link rel="stylesheet" href="./stylesheet/general.css" />
   </head>
   <body>
     <div class="container-main">
@@ -44,7 +53,6 @@
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fa-solid fa-bars"></i>
           </button>
 
@@ -74,20 +82,20 @@
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="index.html"
+                    href="./index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="featured.html">Featured</a>
+                  <a class="nav-link" href="./featured.html">Featured</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="news.html"
+                  <a class="nav-link" aria-current="page" href="./news.html"
                     >News</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="ourgames.html">Our Games</a>
+                  <a class="nav-link" href="./ourgames.html">Our Games</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -101,7 +109,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark p-0 mt-2">
                     <li>
-                      <a class="dropdown-item py-2" href="valesports.html"
+                      <a class="dropdown-item py-2" href="./valesports.html"
                         >Valorant</a
                       >
                     </li>
@@ -109,17 +117,17 @@
                       <hr class="dropdown-divider m-0 bg-light" />
                     </li>
                     <li>
-                      <a class="dropdown-item py-2" href="lolesports.html"
+                      <a class="dropdown-item py-2" href="./lolesports.html"
                         >League of Legends</a
                       >
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">About Us</a>
+                  <a class="nav-link" href="./aboutus.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                  <a class="nav-link" href="./contactus.html">Contact Us</a>
                 </li>
               </ul>
               <form class="d-flex head-form" role="search">
@@ -139,9 +147,8 @@
       <main>
         <div
           class="feat-container"
-          style="background-image: url('mockup/images/vct22-featured.jpg')"
+          style="background-image: url('./mockup/images/vct22-featured.jpg')"
         >
-          <!-- <div class="filter"> -->
           <div class="poster-container">
             <div class="content-inner">
               <img
@@ -170,17 +177,14 @@
               </a>
             </div>
           </div>
-          <!-- </div> -->
         </div>
         <div
           class="latest-news-container"
-          style="background-image: url('mockup/images/background-sprite.png')"
+          style="background-image: url('./mockup/images/background-sprite.png')"
         >
           <div class="title-bar">Latest News</div>
 
-          <!-- <div class="container-fluid"> -->
           <div class="accordion accordion-flush" id="accordionFlushExample">
-            <!-- ============= NEWS ============== -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
@@ -192,7 +196,6 @@
                   aria-controls="flush-collapseOne"
                   style="background-image: url('./mediahub/home/red.jpg')"
                 >
-                  <!-- <i class="fa-regular fa-newspaper pe-5"></i> -->
                   <span class="acc-title">
                     <i class="bi bi-newspaper"></i>
                     NEWS
@@ -207,9 +210,8 @@
               >
                 <div
                   class="accordion-body"
-                  style="background-image: url('mediahub/home/image.jpg')"
+                  style="background-image: url('./mediahub/home/image.jpg')"
                 >
-                  <!-- -====== CONTENT -====== -->
                   <div class="container-fluid p-0">
                     <div class="row p-md-4">
                       <div class="col col-md-6">
@@ -248,11 +250,8 @@
                         </a>
                       </div>
 
-                      <!-- ==== article list grid === -->
                       <div class="col py-sm-4 py-md-0 py-lg-0">
                         <ul class="row unordered-list px-sm-3 px-3 pt-4">
-                          <!--  -->
-
                           <li class="card mb-3 g-0">
                             <a
                               href="./article.html"
@@ -346,8 +345,6 @@
                               ></div>
                             </a>
                           </li>
-
-                          <!--  -->
                         </ul>
                         <div class="row justify-content-center">
                           <a
@@ -359,14 +356,12 @@
                           </a>
                         </div>
                       </div>
-                      <!-- end of article list -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- ====== INSIDE RIOT ======= -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button
@@ -394,7 +389,6 @@
                   class="accordion-body"
                   style="background-image: url('mediahub/home/image.jpg')"
                 >
-                  <!-- -====== CONTENT -====== -->
                   <div class="container-fluid p-0">
                     <div class="row p-md-4">
                       <div class="col col-md-6">
@@ -438,11 +432,8 @@
                         </a>
                       </div>
 
-                      <!-- ==== article list grid === -->
                       <div class="col py-sm-4 py-md-0 py-lg-0">
                         <ul class="row unordered-list px-sm-3 px-3 pt-4">
-                          <!--  -->
-
                           <li class="card mb-3 g-0">
                             <a
                               href="./article.html"
@@ -542,8 +533,6 @@
                               ></div>
                             </a>
                           </li>
-
-                          <!--  -->
                         </ul>
                         <div class="row justify-content-center">
                           <a
@@ -555,13 +544,12 @@
                           </a>
                         </div>
                       </div>
-                      <!-- end of article list -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- ====== GAME PATCH & DEVELOPMENT ======= -->
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button
@@ -587,9 +575,8 @@
               >
                 <div
                   class="accordion-body"
-                  style="background-image: url('mediahub/home/image.jpg')"
+                  style="background-image: url('./mediahub/home/image.jpg')"
                 >
-                  <!-- -====== CONTENT -====== -->
                   <div class="container-fluid p-0">
                     <div class="row p-md-4">
                       <div class="col col-md-6">
@@ -630,11 +617,8 @@
                         </a>
                       </div>
 
-                      <!-- ==== article list grid === -->
                       <div class="col py-sm-4 py-md-0 py-lg-0">
                         <ul class="row unordered-list px-sm-3 px-3 pt-4">
-                          <!--  -->
-
                           <li class="card mb-3 g-0">
                             <a
                               href="./article.html"
@@ -730,8 +714,6 @@
                               ></div>
                             </a>
                           </li>
-
-                          <!--  -->
                         </ul>
                         <div class="row justify-content-center">
                           <a
@@ -743,14 +725,12 @@
                           </a>
                         </div>
                       </div>
-                      <!-- end of article list -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- ====== JOB HIRING ======= -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
                 <button
@@ -760,7 +740,7 @@
                   data-bs-target="#flush-collapseFour"
                   aria-expanded="true"
                   aria-controls="flush-collapseFour"
-                  style="background-image: url('mediahub/home/orange.jpg')"
+                  style="background-image: url('./mediahub/home/orange.jpg')"
                 >
                   <span class="acc-title">
                     <i class="fa-solid fa-briefcase"></i>
@@ -776,7 +756,7 @@
               >
                 <div
                   class="accordion-body"
-                  style="background-image: url('mediahub/home/image.jpg')"
+                  style="background-image: url('./mediahub/home/image.jpg')"
                 >
                   <div class="container-fluid p-0">
                     <h1 class="text-white display-md-4">Open Positions</h1>
@@ -863,13 +843,12 @@
                 </div>
               </div>
             </div>
-            <!-- </div> -->
           </div>
         </div>
 
         <div class="esports-container">
           <div class="title-bar">Esports</div>
-          <!-- ============ CAROUSEL ===================== -->
+
           <div
             id="myCarousel"
             class="carousel slide gy-0"
